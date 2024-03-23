@@ -1,0 +1,1041 @@
+[
+	{
+		"img": "Abyssal orphan",
+		"name": "Abyssal orphan",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"quests": ["Into the Abyss"],
+							"skills": {
+								"allOf": {
+									"Slayer": 85
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Abyssal protector",
+		"name": "Abyssal protector",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"quests": ["Temple of the Eye"],
+							"skills": {
+								"allOf": {
+									"Runecraft": 27,
+									"Mining": 1,
+									"Crafting": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Baby chinchompa (grey)",
+		"name": "Baby chinchompa",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"quests": ["Eagles' Peak"],
+							"skills": {
+								"allOf": {
+									"Hunter": 53
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Baby mole",
+		"name": "Baby mole",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Baron",
+		"name": "Baron",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Desert Treasure II - The Fallen Empire"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Beaver",
+		"name": "Beaver",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Woodcutting": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Butch",
+		"name": "Butch",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Desert Treasure II - The Fallen Empire"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Callisto cub",
+		"name": "Callisto cub",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Giant squirrel",
+		"name": "Giant squirrel",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Agility": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Hellpuppy",
+		"name": "Hellpuppy",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"allOf": {
+									"Slayer": 91
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Herbi",
+		"name": "Herbi",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"quests": ["Bone Voyage"],
+							"skills": {
+								"allOf": {
+									"Hunter": 80,
+									"Herblore": 31
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Heron",
+		"name": "Heron",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Fishing": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Ikkle hydra (serpentine)",
+		"name": "Ikkle hydra",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"allOf": {
+									"Slayer": 95
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Jal-nib-rek",
+		"name": "Jal-nib-rek",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Kalphite princess",
+		"name": "Kalphite princess",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Lil' creator",
+		"name": "Lil' creator",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Lil'viathan",
+		"name": "Lil'viathan",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Desert Treasure II - The Fallen Empire"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Lil' zik",
+		"name": "Lil'zik",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Priest in Peril"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Little nightmare",
+		"name": "Little nightmare",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Priest in Peril"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Muphin (ranged)",
+		"name": "Muphin",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Secrets of the North"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Nexling",
+		"name": "Nexling",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["The Frozen Door"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Noon",
+		"name": "Noon",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Priest in Peril"],
+							"skills": {
+								"allOf": {
+									"Slayer": 75
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Olmlet",
+		"name": "Olmlet",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet chaos elemental",
+		"name": "Pet chaos elemental",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet dagannoth prime",
+		"name": "Pet dagannoth prime",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet dagannoth rex",
+		"name": "Pet dagannoth rex",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet dagannoth prime",
+		"name": "Pet dagannoth supreme",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet dark core",
+		"name": "Pet dark core",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet general graardor",
+		"name": "Pet general graardor",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"allOf": {
+									"Strength": 70
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet k'ril tsutsaroth",
+		"name": "Pet k'ril tsutsaroth",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"anyOf": {
+									"Strength": 60,
+									"Agility": 60
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet kraken",
+		"name": "Pet kraken",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"anyOf": {
+									"Slayer": 87,
+									"Magic": 50
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet kree'arra",
+		"name": "Pet kree'arra",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"allOf": {
+									"Ranged": 70
+								},
+								"anyOf": {
+									"Strength": 60,
+									"Agility": 60
+								}
+							}
+						}
+					]
+				}
+			],
+			"ironman": [
+				{
+					"concern": "Obtain a mithril grapple",
+					"detail": [
+						{
+							"combat": true
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Fletching": 59,
+									"Smithing": 59
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Fletching": 99
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet penance queen",
+		"name": "Pet penance queen",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet smoke devil",
+		"name": "Pet smoke devil",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"allOf": {
+									"Slayer": 93
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet snakeling",
+		"name": "Pet snakeling",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"anyOf": {
+									"Ranged": 1,
+									"Magic": 1
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Partial completion of 'Regicide'",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Underground Pass"],
+							"skills": {
+								"allOf": {
+									"Crafting": 10,
+									"Agility": 56
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Pet zilyana",
+		"name": "Pet zilyana",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"skills": {
+								"allOf": {
+									"Agility": 70
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Phoenix",
+		"name": "Phoenix",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Woodcutting": 1,
+									"Firemaking": 50
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Prince black dragon",
+		"name": "Prince black dragon",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Rift guardian (air)",
+		"name": "Rift guardian",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Runecraft": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Rock golem",
+		"name": "Rock golem",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Mining": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Rocky",
+		"name": "Rocky",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Thieving": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Scorpia's offspring",
+		"name": "Scorpia's offspring",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Skotos",
+		"name": "Skotos",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Smolcano",
+		"name": "Smolcano",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"quests": ["Song of the Elves"],
+							"skills": {
+								"allOf": {
+									"Mining": 70,
+									"Smithing": 70
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Sraracha",
+		"name": "Sraracha",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Tangleroot",
+		"name": "Tangleroot",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Farming": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Tiny tempor",
+		"name": "Tiny tempor",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Fishing": 30
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Tumeken's guardian",
+		"name": "Tumeken's guardian",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Beneath Cursed Sands"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Tzrek-jad",
+		"name": "Tzrek-jad",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Venenatis spiderling",
+		"name": "Venenatis spiderling",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Vet'ion jr.",
+		"name": "Vet'ion Jr.",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Vorki",
+		"name": "Vorki",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Dragon Slayer II"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Wisp",
+		"name": "Wisp",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Desert Treasure II - The Fallen Empire"]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"img": "Youngllef",
+		"name": "Youngllef",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true,
+							"quests": ["Song of the Elves"]
+						}
+					]
+				}
+			]
+		}
+	}
+]
