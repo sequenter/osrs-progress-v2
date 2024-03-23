@@ -2,13 +2,20 @@
 
 osrs-progress-v2 is an SPA, written with [SvelteKit](https://kit.svelte.dev/), that provides a UI to act as a companion to track progress on OldSchool Runescape. Originally written with spaghetti vanilla JavaScript (and a bit of ancient [jQuery](https://jquery.com/)), v2 was created to be a modern equivalent... with more features!
 
-- Technology stack consists of [Svelte](https://svelte.dev/) and [Typescript](https://www.typescriptlang.org/), with unit tests using [Vitest](https://vitest.dev/), JSON validation through [Ajv](https://ajv.js.org/), formatted using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
-- No longer OSAAT focused, skill levels can be set, not just unlocked.
-- Settings toggles:
-  - Combat: Allow combat related tasks.
-  - Ironman: set to ironman mode.
-  - Recommended: Set requirements to wiki recommended stats.
+### Technology Stack
+
+Written with [Svelte](https://svelte.dev/) and [Typescript](https://www.typescriptlang.org/), with unit tests using [Vitest](https://vitest.dev/), JSON validation through [Ajv](https://ajv.js.org/), formatted using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
+
+### Features
+
+- Track skill progress by unlocking and levelling manually, or obtain via username.
+- View available achievements, quests, pets and collections (referred to as _tasks_) that reveal based on skill levels and quest completions.
+- View current task completion progress.
 - View task requirements through their info dialogs.
+- Settings toggles:
+  - **Combat**: Enable combat and show combat related tasks.
+  - **Ironman**: Show tasks that have extra ironman requirements that have been fulfilled.
+  - **Recommended**: Tasks will only show when _recommended_ (alongside required) stats have been fulfilled. 
 
 ## Data
 
@@ -18,25 +25,25 @@ osrs-progress-v2 is an SPA, written with [SvelteKit](https://kit.svelte.dev/), t
 
 Each JSON file is mirrored with a Typescript interface and validated against a combined schema:
 
-- [Achievement](#achievement)
-- [Collection](#collection)
-- [Pets](#pets)
-- [Quest](#quest)
+- [Achievement](#Achievement)
+- [Collection](#Collection)
+- [Pets](#Pet)
+- [Quest](#Quest)
   - The `skills` object within the `rewards` object contains arrays of skills that the quest rewards XP in.
     - `allOf`: XP in these skills are always rewarded.
     - `anyOf`: XP rewards are given as a choice for these skills.
     - `xsomeOf`: XP is only potentially awarded in these skills, either one, some, or none, such as in the case of 'Observatory Quest' and 'Tai Brwo Wannai Trio'.
-- [Requirements](#requirements)
+- [Requirements](#Requirements)
   - Can contain `main`, `ironman`, or neither. `ironman` requirements need to be fulfilled in addition to `main` requirements.
-- [Concern](#concern)
+- [Concern](#Concern)
   - Concerns contain details of specific requirements.
   - If multiple concerns are present in `main` and/or `ironman` requirements, they all need to be fulfilled to fulfil the requirement.
-- [ConcernDetail](#concerndetail)
+- [ConcernDetail](#Concerndetail)
   - Optionally contains `combat`, `combatLevel`, `QP`, `quests` and `skills`.
   - Multiple _ConcernDetail_ on a _Concern_ object signifies that a _Concern_ can be fulfilled in several ways.
   - Only one _ConcernDetail_ needs to be fulfilled to fulfil the _Concern_.
   - Within the `skills` object, all skills and levels need to be fulfilled within `allOf`, whereas only one skill from `anyOf` needs to be fulfilled (in addition to `allOf`).
-- [SkillDetail](#skilldetail)
+- [SkillDetail](#Skilldetail)
 
 #### Achievement
 
@@ -111,7 +118,7 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 }
 ```
 
-#### Pets
+#### Pet
 
 ```JSON
 {
