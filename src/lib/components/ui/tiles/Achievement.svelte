@@ -10,6 +10,7 @@
 	export let diary: AchievementDiary;
 	export let difficulty: AchievementDifficulty;
 	export let task: string;
+	export let upcoming: boolean;
 
 	$: src = `${WIKI_IMAGES_URL}${img.replaceAll(' ', '_')}.png`;
 	$: complete = $Achievements.includes(task);
@@ -49,7 +50,10 @@
 	<span class="text-md text-yellow-400 grow">{task}</span>
 	<hr class="h-px my-2 bg-birch-800 border-0" />
 	<span
-		class={clsx('text-status text-md', complete && 'text-green-400', !complete && 'text-gray-400')}
-		>{complete ? 'Complete' : 'Incomplete'}</span
+		class={clsx(
+			'text-status text-md',
+			complete && !upcoming && 'text-green-400',
+			!complete && !upcoming && 'text-gray-400'
+		)}>{upcoming ? 'Upcoming' : complete ? 'Complete' : 'Incomplete'}</span
 	>
 </div>

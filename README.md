@@ -238,8 +238,8 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 		},
 		"main": {
 			"items": {
-                "$ref": "/Concern"
-            },
+				"$ref": "/Concern"
+			},
 			"type": "array"
 		}
 	},
@@ -316,7 +316,7 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 			"$ref": "/Skills"
 		}
 	},
-    "patternProperties": {
+	"patternProperties": {
 		".*": {
 			"type": "number"
 		}

@@ -1,0 +1,44 @@
+[
+	{
+		"diary": "Ardougne",
+		"difficulty": "Easy",
+		"id": "ARD-EASY-001",
+		"img": "Banner (Kandarin)",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"quests": ["Rune Mysteries"]
+						}
+					]
+				}
+			]
+		},
+		"task": "Have Wizard Cromperty teleport you to the Rune essence mine"
+	},
+	{
+		"diary": "Ardougne",
+		"difficulty": "Easy",
+		"id": "ARD-EASY-002",
+		"img": "Banner (Kandarin)",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Thieving": 5
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		"task": "Steal a cake from the East Ardougne market stall"
+	}
+]

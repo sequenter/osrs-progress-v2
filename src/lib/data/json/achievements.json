@@ -209,7 +209,7 @@
 				}
 			]
 		},
-		"task": "Grapple over Yanille's south wallOf and jump off"
+		"task": "Grapple over Yanille's south wall and jump off"
 	},
 	{
 		"diary": "Ardougne",
@@ -323,7 +323,7 @@
 				}
 			]
 		},
-		"task": "Travel to Castle Wars by Hot Air BallOfoon"
+		"task": "Travel to Castle Wars by Hot Air Balloon"
 	},
 	{
 		"diary": "Ardougne",
@@ -377,7 +377,7 @@
 				}
 			]
 		},
-		"task": "Catch anyOf fish on the Fishing Platform"
+		"task": "Catch any fish on the Fishing Platform"
 	},
 	{
 		"diary": "Ardougne",
@@ -1736,7 +1736,7 @@
 								"The Tourist Trap",
 								"Troll Stronghold",
 								"Priest in Peril",
-								"WaterfallOf Quest",
+								"Waterfall Quest",
 								"The Restless Ghost"
 							],
 							"skills": {
@@ -2205,7 +2205,7 @@
 				}
 			]
 		},
-		"task": "Climb over the western Falador wallOf"
+		"task": "Climb over the western Falador wall"
 	},
 	{
 		"diary": "Falador",
@@ -2568,7 +2568,7 @@
 				}
 			]
 		},
-		"task": "Grapple up and then jump off the north Falador wallOf"
+		"task": "Grapple up and then jump off the north Falador wall"
 	},
 	{
 		"diary": "Falador",
@@ -2925,7 +2925,7 @@
 				}
 			]
 		},
-		"task": "Crack a wallOf safe within Rogues' Den"
+		"task": "Crack a wall safe within Rogues' Den"
 	},
 	{
 		"diary": "Falador",
@@ -3393,7 +3393,7 @@
 				}
 			]
 		},
-		"task": "Steal from the Keldagrim crafting or baker's stallOf"
+		"task": "Steal from the Keldagrim crafting or baker's stall"
 	},
 	{
 		"diary": "Fremennik",
@@ -3549,7 +3549,7 @@
 				}
 			]
 		},
-		"task": "Steal from the Rellekka fish stallOfs"
+		"task": "Steal from the Rellekka fish stalls"
 	},
 	{
 		"diary": "Fremennik",
@@ -3837,7 +3837,7 @@
 				}
 			]
 		},
-		"task": "Steal from the Keldagrim Gem StallOf"
+		"task": "Steal from the Keldagrim Gem Stall"
 	},
 	{
 		"diary": "Fremennik",
@@ -4642,7 +4642,7 @@
 				}
 			]
 		},
-		"task": "Kill a fire giant in the WaterfallOf Dungeon"
+		"task": "Kill a fire giant in the Waterfall Dungeon"
 	},
 	{
 		"diary": "Kandarin",
@@ -4976,7 +4976,7 @@
 								"The Tourist Trap",
 								"Troll Stronghold",
 								"Priest in Peril",
-								"WaterfallOf Quest",
+								"Waterfall Quest",
 								"The Restless Ghost"
 							],
 							"skills": {
@@ -5649,7 +5649,7 @@
 		"id": "KAR-EASY-008",
 		"img": "Karamja Area Badge",
 		"requirements": {},
-		"task": "Collect 5 seaweed from anyOfwhere on Karamja"
+		"task": "Collect 5 seaweed from anywhere on Karamja"
 	},
 	{
 		"diary": "Karamja",
@@ -5718,7 +5718,7 @@
 				}
 			]
 		},
-		"task": "Discover hidden wallOf in the dungeon below the volcano"
+		"task": "Discover hidden wall in the dungeon below the volcano"
 	},
 	{
 		"diary": "Karamja",
@@ -5880,7 +5880,7 @@
 				}
 			]
 		},
-		"task": "Cut a log from a mahoganyOf tree"
+		"task": "Cut a log from a mahogany tree"
 	},
 	{
 		"diary": "Karamja",
@@ -6185,7 +6185,7 @@
 								"Heroes' Quest",
 								"Shilo Village",
 								"Underground Pass",
-								"WaterfallOf Quest"
+								"Waterfall Quest"
 							],
 							"skills": {
 								"allOf": {
@@ -6280,7 +6280,7 @@
 								"Heroes' Quest",
 								"Shilo Village",
 								"Underground Pass",
-								"WaterfallOf Quest"
+								"Waterfall Quest"
 							],
 							"skills": {
 								"allOf": {
@@ -6370,7 +6370,7 @@
 								"Heroes' Quest",
 								"Shilo Village",
 								"Underground Pass",
-								"WaterfallOf Quest"
+								"Waterfall Quest"
 							],
 							"skills": {
 								"allOf": {
@@ -6699,7 +6699,7 @@
 				}
 			]
 		},
-		"task": "Steal from a Hosidius Fruit StallOf"
+		"task": "Steal from a Hosidius Fruit Stall"
 	},
 	{
 		"diary": "Kourend & Kebos",
@@ -6939,7 +6939,7 @@
 				}
 			]
 		},
-		"task": "Use Kharedst's memoirs to teleport to allOf five cities in Great Kourend"
+		"task": "Use Kharedst's memoirs to teleport to all five cities in Great Kourend"
 	},
 	{
 		"diary": "Kourend & Kebos",
@@ -7154,7 +7154,7 @@
 				}
 			]
 		},
-		"task": "Chop some mahoganyOf logs north of the Farming Guild"
+		"task": "Chop some mahogany logs north of the Farming Guild"
 	},
 	{
 		"diary": "Kourend & Kebos",
@@ -8259,7 +8259,7 @@
 				}
 			]
 		},
-		"task": "Squeeze past the jutting wallOf on your way to the Cosmic Altar"
+		"task": "Squeeze past the jutting wall on your way to the Cosmic Altar"
 	},
 	{
 		"diary": "Lumbridge & Draynor",
@@ -8798,7 +8798,7 @@
 				}
 			]
 		},
-		"task": "Craft anyOf snelm from scratch in Morytania"
+		"task": "Craft any snelm from scratch in Morytania"
 	},
 	{
 		"diary": "Morytania",
@@ -9230,7 +9230,7 @@
 				}
 			]
 		},
-		"task": "Make a batch of cannonballOfs at the Port Phasmatys furnace"
+		"task": "Make a batch of cannonballs at the Port Phasmatys furnace"
 	},
 	{
 		"diary": "Morytania",
@@ -9474,7 +9474,7 @@
 				}
 			]
 		},
-		"task": "Harvest some Watermelon from the allOfotment patch on Harmony Island"
+		"task": "Harvest some Watermelon from the allotment patch on Harmony Island"
 	},
 	{
 		"diary": "Morytania",
@@ -9499,7 +9499,7 @@
 				}
 			]
 		},
-		"task": "Chop and burn some mahoganyOf logs on Mos Le'Harmless"
+		"task": "Chop and burn some mahogany logs on Mos Le'Harmless"
 	},
 	{
 		"diary": "Morytania",
@@ -9748,7 +9748,7 @@
 				}
 			]
 		},
-		"task": "Cremate anyOf Shade remains on a Magic or Redwood pyre"
+		"task": "Cremate any Shade remains on a Magic or Redwood pyre"
 	},
 	{
 		"diary": "Morytania",
@@ -9871,7 +9871,7 @@
 				}
 			]
 		},
-		"task": "Loot the Barrows chest while wearing anyOf complete barrows set"
+		"task": "Loot the Barrows chest while wearing any complete barrows set"
 	},
 	{
 		"diary": "Varrock",
@@ -10143,7 +10143,7 @@
 				}
 			]
 		},
-		"task": "Steal from the tea stallOf in Varrock"
+		"task": "Steal from the tea stall in Varrock"
 	},
 	{
 		"diary": "Varrock",
@@ -10415,7 +10415,7 @@
 		"requirements": {
 			"ironman": [
 				{
-					"concern": "Obtain some mahoganyOf logs",
+					"concern": "Obtain some mahogany logs",
 					"detail": [
 						{
 							"combat": true
@@ -10439,7 +10439,7 @@
 				}
 			]
 		},
-		"task": "Make 20 mahoganyOf planks in one go"
+		"task": "Make 20 mahogany planks in one go"
 	},
 	{
 		"diary": "Varrock",
@@ -10488,7 +10488,7 @@
 				}
 			]
 		},
-		"task": "Use the ballOfoon to travel from Varrock"
+		"task": "Use the balloon to travel from Varrock"
 	},
 	{
 		"diary": "Varrock",
@@ -10863,7 +10863,7 @@
 			],
 			"ironman": [
 				{
-					"concern": "Obtain some mahoganyOf logs",
+					"concern": "Obtain some mahogany logs",
 					"detail": [
 						{
 							"combat": true
@@ -10887,7 +10887,7 @@
 				}
 			]
 		},
-		"task": "Use Lunar magic to make 20 mahoganyOf planks in the Varrock Lumber Yard"
+		"task": "Use Lunar magic to make 20 mahogany planks in the Varrock Lumber Yard"
 	},
 	{
 		"diary": "Varrock",
@@ -11143,7 +11143,7 @@
 				}
 			]
 		},
-		"task": "Score a goal in a Gnome BallOf match"
+		"task": "Score a goal in a Gnome Ball match"
 	},
 	{
 		"diary": "Western Provinces",
@@ -11163,7 +11163,7 @@
 				}
 			]
 		},
-		"task": "Claim anyOf Chompy bird hat from Rantz"
+		"task": "Claim any Chompy bird hat from Rantz"
 	},
 	{
 		"diary": "Western Provinces",
@@ -11442,7 +11442,7 @@
 					]
 				},
 				{
-					"concern": "Partial completion of 'One SmallOf Favour'",
+					"concern": "Partial completion of 'One Small Favour'",
 					"detail": [
 						{
 							"quests": ["Rune Mysteries", "Shilo Village"],
@@ -11742,7 +11742,7 @@
 				}
 			]
 		},
-		"task": "Chop and burn some mahoganyOf logs on Ape Atoll"
+		"task": "Chop and burn some mahogany logs on Ape Atoll"
 	},
 	{
 		"diary": "Western Provinces",
@@ -11879,7 +11879,7 @@
 			],
 			"ironman": [
 				{
-					"concern": "Obtain some mahoganyOf planks",
+					"concern": "Obtain some mahogany planks",
 					"detail": [
 						{
 							"combat": true
@@ -11904,7 +11904,7 @@
 				}
 			]
 		},
-		"task": "Build an Isafdar painting in your POH Quest HallOf"
+		"task": "Build an Isafdar painting in your POH Quest Hall"
 	},
 	{
 		"diary": "Western Provinces",
@@ -12189,7 +12189,7 @@
 				}
 			]
 		},
-		"task": "Equip anyOf complete void set"
+		"task": "Equip any complete void set"
 	},
 	{
 		"diary": "Western Provinces",
@@ -12434,7 +12434,7 @@
 		"id": "WIL-EASY-012",
 		"img": "Wilderness Area Badge",
 		"requirements": {},
-		"task": "Equip anyOf team cape in the Wilderness"
+		"task": "Equip any team cape in the Wilderness"
 	},
 	{
 		"diary": "Wilderness",
@@ -12727,7 +12727,7 @@
 				}
 			]
 		},
-		"task": "Cast anyOf of the three God spells against another player in the Wilderness"
+		"task": "Cast any of the three God spells against another player in the Wilderness"
 	},
 	{
 		"diary": "Wilderness",
@@ -13027,7 +13027,7 @@
 				}
 			]
 		},
-		"task": "Kill CallOfisto, Venenatis, and Vet'ion"
+		"task": "Kill Callisto, Venenatis, and Vet'ion"
 	},
 	{
 		"diary": "Wilderness",
