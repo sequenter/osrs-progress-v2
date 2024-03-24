@@ -77,8 +77,8 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 			"type": "string"
 		},
 		"requirements": {
-            "$ref": "/Requirements"
-        },
+			"$ref": "/Requirements"
+		},
 		"task": {
 			"type": "string"
 		}
@@ -107,8 +107,8 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 			"type": "string"
 		},
 		"requirements": {
-            "$ref": "/Requirements"
-        },
+			"$ref": "/Requirements"
+		},
 		"task": {
 			"type": "string"
 		}
@@ -131,8 +131,8 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 			"type": "string"
 		},
 		"requirements": {
-            "$ref": "/Requirements"
-        },
+			"$ref": "/Requirements"
+		},
 		"task": {
 			"type": "string"
 		}
@@ -177,8 +177,8 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 			"type": "string"
 		},
 		"requirements": {
-            "$ref": "/Requirements"
-        },
+			"$ref": "/Requirements"
+		},
 		"rewards": {
 			"additionalProperties": false,
 			"properties": {
@@ -258,8 +258,8 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 		},
 		"detail": {
 			"items": {
-                "$ref": "/ConcernDetail"
-            },
+				"$ref": "/ConcernDetail"
+			},
 			"type": "array"
 		}
 	},
@@ -293,11 +293,11 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 			"additionalProperties": false,
 			"properties": {
 				"allOf": {
-                    "$ref": "/SkillDetail"
-                },
+					"$ref": "/SkillDetail"
+				},
 				"anyOf": {
-                    "$ref": "/SkillDetail"
-                }
+					"$ref": "/SkillDetail"
+				}
 			},
 			"type": "object"
 		}

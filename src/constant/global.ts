@@ -1,3 +1,7 @@
+export const WIKI_IMAGES_URL = 'https://oldschool.runescape.wiki/images/';
+
+export const WIKI_IMAGES_ERROR = 'https://oldschool.runescape.wiki/images/Bank_filler.png';
+
 export const ACHIEVEMENT_DIFFICULTY = ['Easy', 'Medium', 'Hard', 'Elite'] as const;
 
 export const ACHIEVEMENT_DIARIES = [

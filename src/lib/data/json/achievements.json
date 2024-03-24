@@ -39,7 +39,7 @@
 				}
 			]
 		},
-		"task": "Steal a cake from the East Ardougne market stallOfs"
+		"task": "Steal a cake from the East Ardougne market stall"
 	},
 	{
 		"diary": "Ardougne",
@@ -13164,36 +13164,10 @@
 					"concern": "Mandatory",
 					"detail": [
 						{
-							"combat": true,
 							"skills": {
 								"allOf": {
 									"Woodcutting": 75,
 									"Firemaking": 75
-								}
-							}
-						}
-					]
-				}
-			],
-			"ironman": [
-				{
-					"concern": "Obtain a mithril grapple",
-					"detail": [
-						{
-							"combat": true
-						},
-						{
-							"skills": {
-								"allOf": {
-									"Fletching": 59,
-									"Smithing": 59
-								}
-							}
-						},
-						{
-							"skills": {
-								"allOf": {
-									"Fletching": 99
 								}
 							}
 						}

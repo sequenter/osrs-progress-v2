@@ -4,7 +4,7 @@ import {
 	QUEST_DIFFICULTY,
 	QUEST_LENGTH,
 	SKILLS
-} from '$constant/global';
+} from '$constant/Global';
 
 const SCHEMA_SKILLDETAIL = {
 	additionalProperties: false,
@@ -184,7 +184,7 @@ export const SCHEMA_COLLECTION = {
 	type: 'object'
 } as const;
 
-export const SCHEMA_PETS = {
+export const SCHEMA_PET = {
 	additionalProperties: false,
 	properties: {
 		name: {

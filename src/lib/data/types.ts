@@ -1,20 +1,22 @@
-import type {
+import {
 	ACHIEVEMENT_DIARIES,
 	ACHIEVEMENT_DIFFICULTY,
 	QUEST_DIFFICULTY,
 	QUEST_LENGTH,
 	SKILLS
-} from '$constant/global';
+} from '$constant/Global';
 
 // Types
 export type Skill = (typeof SKILLS)[number];
-
+export type AchievementDifficulty = (typeof ACHIEVEMENT_DIFFICULTY)[number];
+export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];
+export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
 export type SkillDetail = { [key in Skill]?: number };
 
 // Interfaces
 export interface Achievement {
-	diary: (typeof ACHIEVEMENT_DIARIES)[number];
-	difficulty: (typeof ACHIEVEMENT_DIFFICULTY)[number];
+	diary: AchievementDiary;
+	difficulty: AchievementDifficulty;
 	id: string;
 	img: string;
 	requirements: Requirements;
@@ -22,7 +24,7 @@ export interface Achievement {
 }
 
 export interface Quest {
-	difficulty: (typeof QUEST_DIFFICULTY)[number];
+	difficulty: QuestDifficulty;
 	img: string;
 	length: (typeof QUEST_LENGTH)[number];
 	name: string;

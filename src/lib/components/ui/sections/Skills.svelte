@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Section } from '$lib/components';
-	import { SKILLS } from '$constant/global';
-	import Skill from '../tiles/Skill.svelte';
+	import { SKILLS } from '$constant/Global';
+	import { SkillTile } from '$lib/components/ui/tiles';
 </script>
 
 <Section
@@ -11,6 +11,6 @@
 	<img slot="icon" class="me-3 w-8 h-8" src="$lib/assets/icons/Stats.png" alt="Skills icon" />
 
 	{#each SKILLS as skill}
-		<Skill {skill} minLevel={skill === 'Hitpoints' ? 10 : 1} maxLevel={99} />
+		<SkillTile {skill} minLevel={skill === 'Hitpoints' ? 10 : 1} maxLevel={99} />
 	{/each}
 </Section>
