@@ -7,9 +7,9 @@ import type {
 } from '$constant/global';
 
 // Types
-export type Skills = (typeof SKILLS)[number];
+export type Skill = (typeof SKILLS)[number];
 
-export type SkillDetail = { [key in Skills]?: number };
+export type SkillDetail = { [key in Skill]?: number };
 
 // Interfaces
 export interface Achievement {
@@ -30,7 +30,7 @@ export interface Quest {
 	requirements: Requirements;
 	rewards: {
 		QP?: number;
-		skills?: Skills[];
+		skills?: Skill[];
 	};
 }
 
