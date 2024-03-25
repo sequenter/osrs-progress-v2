@@ -16,14 +16,14 @@ import { default as mining } from '$lib/assets/icons/skills/Mining.png';
 import { default as prayer } from '$lib/assets/icons/skills/Prayer.png';
 import { default as ranged } from '$lib/assets/icons/skills/Ranged.png';
 import { default as runecraft } from '$lib/assets/icons/skills/Runecraft.png';
+import type { Skill } from '$lib/data/types';
 import { default as slayer } from '$lib/assets/icons/skills/Slayer.png';
 import { default as smithing } from '$lib/assets/icons/skills/Smithing.png';
 import { default as strength } from '$lib/assets/icons/skills/Strength.png';
 import { default as thieving } from '$lib/assets/icons/skills/Thieving.png';
 import { default as woodcutting } from '$lib/assets/icons/skills/Woodcutting.png';
-import type { Skills } from '$lib/data/types';
 
-export const Mapper: { [key in Skills]: string } = {
+export const Mapper: { [key in Skill]: string } = {
 	Agility: agility,
 	Attack: attack,
 	Construction: construction,

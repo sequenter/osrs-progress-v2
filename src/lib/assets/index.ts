@@ -1,4 +1,6 @@
+export { default as Close } from './svg/Close.svelte';
 export { default as Download } from './svg/Download.svelte';
+export { default as Help } from './svg/Help.svelte';
 export { default as Hide } from './svg/Hide.svelte';
 export { default as Show } from './svg/Show.svelte';
 export { default as Left } from './svg/Left.svelte';

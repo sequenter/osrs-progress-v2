@@ -9,6 +9,14 @@ module.exports = {
 	],
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint'],
+	rules: {
+		'sort-imports': [
+			'error',
+			{
+				ignoreCase: true
+			}
+		]
+	},
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,

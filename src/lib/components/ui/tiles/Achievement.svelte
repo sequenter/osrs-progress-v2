@@ -1,10 +1,10 @@
 <script lang="ts">
+	import type { AchievementDiary, AchievementDifficulty } from '$lib/data/types';
 	import { WIKI_IMAGES_ERROR, WIKI_IMAGES_URL } from '$constant/Global';
-	import { TEXT_COLOUR } from '$constant/Mapper';
-	import type { AchievementDifficulty, AchievementDiary } from '$lib/data/types';
 	import { Achievements } from '$stores/achievements.store';
 	import { clsx } from 'clsx';
 	import { press } from 'svelte-gestures';
+	import { TEXT_COLOUR } from '$constant/Mapper';
 
 	export let img: string;
 	export let diary: AchievementDiary;
@@ -21,9 +21,9 @@
 
 	function handlePress() {
 		if ($Achievements.includes(task)) {
-			$Achievements = $Achievements.filter((item) => item !== task);
+			Achievements.set($Achievements.filter((item) => item !== task));
 		} else {
-			$Achievements = [...$Achievements, task];
+			Achievements.update((current) => [...current, task]);
 		}
 	}
 </script>
@@ -52,8 +52,8 @@
 	<span
 		class={clsx(
 			'text-status text-md',
-			complete && !upcoming && 'text-green-400',
+			complete && 'text-green-400',
 			!complete && !upcoming && 'text-gray-400'
-		)}>{upcoming ? 'Upcoming' : complete ? 'Complete' : 'Incomplete'}</span
+		)}>{complete ? 'Complete' : upcoming ? 'Upcoming' : 'Incomplete'}</span
 	>
 </div>

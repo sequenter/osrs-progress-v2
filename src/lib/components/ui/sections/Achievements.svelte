@@ -1,16 +1,22 @@
 <script lang="ts">
 	import type { Achievement } from '$lib/data/types';
+	import { Achievements } from '$stores/achievements.store';
 	import { ACHIEVEMENTS } from '$lib/data';
 	import { AchievementTile } from '$lib/components/ui/tiles';
 	import { getAchievements } from '$lib/utils/get.utils';
 	import { Section } from '$lib/components';
+	import { Settings } from '$stores/settings.store';
 	import { Skills } from '$stores/skills.store';
 
-	let achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills);
+	$: achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills, $Settings);
 
-	Skills.subscribe(() => {
-		achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills);
+	Achievements.subscribe(() => {
+		achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills, $Settings);
 	});
+
+	const canShow = (task: string) => {
+		return $Settings.show__completed || !$Achievements.includes(task);
+	};
 </script>
 
 <Section title="Achievements">
@@ -22,12 +28,14 @@
 	/>
 
 	{#each achievements as achievement}
-		<AchievementTile
-			img={achievement.img}
-			diary={achievement.diary}
-			difficulty={achievement.difficulty}
-			task={achievement.task}
-			upcoming={achievement.upcoming}
-		/>
+		{#if canShow(achievement.task)}
+			<AchievementTile
+				img={achievement.img}
+				diary={achievement.diary}
+				difficulty={achievement.difficulty}
+				task={achievement.task}
+				upcoming={achievement.upcoming}
+			/>
+		{/if}
 	{/each}
 </Section>

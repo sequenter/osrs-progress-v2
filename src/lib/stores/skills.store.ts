@@ -1,5 +1,5 @@
-import type { Skill } from '$lib/data/types';
 import { getItem, setItem } from '$lib/utils/storage.utils';
+import type { Skill } from '$lib/data/types';
 import { writable } from 'svelte/store';
 
 interface SkillDetail {
