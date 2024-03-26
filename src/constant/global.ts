@@ -30,16 +30,19 @@ export const QUEST_DIFFICULTY = [
 
 export const QUEST_LENGTH = ['Very Short', 'Short', 'Medium', 'Long', 'Very Long'] as const;
 
-export const SKILLS = [
+export const COMBAT_SKILLS = [
 	'Attack',
 	'Strength',
 	'Defence',
 	'Ranged',
 	'Prayer',
 	'Magic',
+	'Hitpoints'
+] as const;
+
+export const SKILLING_SKILLS = [
 	'Runecraft',
 	'Construction',
-	'Hitpoints',
 	'Agility',
 	'Herblore',
 	'Thieving',
@@ -55,3 +58,5 @@ export const SKILLS = [
 	'Woodcutting',
 	'Farming'
 ] as const;
+
+export const SKILLS = [...COMBAT_SKILLS, ...SKILLING_SKILLS] as const;

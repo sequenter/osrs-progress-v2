@@ -5,14 +5,15 @@
 	export let value: number;
 	export let min: number;
 	export let max: number;
-	export let htmlClass = '';
+	export let onChange = () => {};
 
 	const handleClick = (val: number) => {
 		value = Math.min(max, Math.max(min, value + val));
+		onChange();
 	};
 </script>
 
-<div class="flex items-center justify-between w-12 h-6 {htmlClass}">
+<div class="flex items-center justify-between w-12 h-6">
 	<ActionButton onClick={() => handleClick(-1)}>
 		<SVG><Left /></SVG>
 	</ActionButton>

@@ -4,14 +4,19 @@
 	import { ACHIEVEMENTS } from '$lib/data';
 	import { AchievementTile } from '$lib/components/ui/tiles';
 	import { getAchievements } from '$lib/utils/get.utils';
+	import { Quests } from '$stores/quests.store';
 	import { Section } from '$lib/components';
 	import { Settings } from '$stores/settings.store';
 	import { Skills } from '$stores/skills.store';
 
-	$: achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills, $Settings);
+	let achievements: (Achievement & { upcoming: boolean })[];
+
+	$: achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills, $Settings, $Quests);
 
 	Achievements.subscribe(() => {
-		achievements = getAchievements(ACHIEVEMENTS as Achievement[], $Skills, $Settings);
+		// Completing achievements only adds them to the achievements store with no further processing required,
+		// and as such 'getAchievements' does not have to be called again.
+		achievements = achievements;
 	});
 
 	const canShow = (task: string) => {
@@ -26,6 +31,12 @@
 		src="$lib/assets/icons/Achievements.png"
 		alt="Achievements icon"
 	/>
+
+	<svelte:fragment slot="controls">
+		<h3 class="font-medium text-2xl me-2">
+			<span>{$Achievements.length}</span>/<span>{achievements.length}</span>
+		</h3>
+	</svelte:fragment>
 
 	{#each achievements as achievement}
 		{#if canShow(achievement.task)}
