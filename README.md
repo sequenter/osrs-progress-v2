@@ -16,6 +16,8 @@ Written with [Svelte](https://svelte.dev/) and [Typescript](https://www.typescri
   - **Combat**: Enable combat and show combat related tasks.
   - **Ironman**: Show tasks that have extra ironman requirements that have been fulfilled.
   - **Recommended**: Tasks will only show when _recommended_ (alongside required) stats have been fulfilled.
+  - **Completed**: Show tasks that have been completed
+  - **Upcoming**: Show tasks that that aren't quite unlocked, but will be soon within a given amount of levels
 
 ## Data
 
