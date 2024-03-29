@@ -1,8 +1,3 @@
-import { getItem, setItem } from '$lib/utils/storage.utils';
-import { writable } from 'svelte/store';
+import { baseStore } from '$lib/utils/store.utils';
 
-export const Pets = writable<string[]>(getItem('pets') || []);
-
-Pets.subscribe((val) => {
-	setItem('pets', val);
-});
+export const Pets = baseStore('pets', [] as string[]);

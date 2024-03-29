@@ -11,24 +11,19 @@
 	export let min: number;
 	export let max: number;
 
-	let level = $Skills.skills[skill].level;
-	let locked = $Skills.skills[skill].locked;
-
-	$: ($Skills.skills[skill].level = level), ($Skills.skills[skill].locked = locked);
-
 	const handlePress = () => {
-		locked = !locked;
+		$Skills.items[skill].locked = !$Skills.items[skill].locked;
 	};
 
 	const handleSkillLevel = () => {
 		if (skill in COMBAT_SKILLS) {
-			const attack = $Skills.skills['Attack'].level;
-			const strength = $Skills.skills['Strength'].level;
-			const defence = $Skills.skills['Defence'].level;
-			const ranged = $Skills.skills['Ranged'].level;
-			const prayer = $Skills.skills['Prayer'].level;
-			const magic = $Skills.skills['Magic'].level;
-			const hitpoints = $Skills.skills['Hitpoints'].level;
+			const attack = $Skills.items['Attack'].level;
+			const strength = $Skills.items['Strength'].level;
+			const defence = $Skills.items['Defence'].level;
+			const ranged = $Skills.items['Ranged'].level;
+			const prayer = $Skills.items['Prayer'].level;
+			const magic = $Skills.items['Magic'].level;
+			const hitpoints = $Skills.items['Hitpoints'].level;
 
 			$Skills.combatLevel =
 				(defence + hitpoints + Math.floor(prayer * 0.5)) * 0.25 +
@@ -42,7 +37,7 @@
 <div
 	class={clsx(
 		'flex flex-col select-none items-center rounded-lg p-2 cursor-pointer transition-opacity drop-shadow-lg hover:outline bg-birch-500',
-		locked && 'opacity-60'
+		$Skills.items[skill].locked && 'opacity-60'
 	)}
 	use:press={{ triggerBeforeFinished: true }}
 	on:press={handlePress}
@@ -51,8 +46,13 @@
 	<img class="w-16 h-16 my-2" src={Mapper[skill]} alt="{skill} icon" />
 
 	<div class="min-h-6">
-		{#if !locked}
-			<NumberInput bind:value={level} onChange={handleSkillLevel} {min} {max} />
+		{#if !$Skills.items[skill].locked}
+			<NumberInput
+				bind:value={$Skills.items[skill].level}
+				onChange={handleSkillLevel}
+				{min}
+				{max}
+			/>
 		{/if}
 	</div>
 </div>

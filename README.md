@@ -4,7 +4,7 @@ osrs-progress-v2 is an SPA, written with [SvelteKit](https://kit.svelte.dev/), t
 
 ### Technology Stack
 
-Written with [Svelte](https://svelte.dev/) and [Typescript](https://www.typescriptlang.org/), with unit tests using [Vitest](https://vitest.dev/), JSON validation through [Ajv](https://ajv.js.org/), formatted using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
+Written with [Svelte](https://svelte.dev/), [Typescript](https://www.typescriptlang.org/) and [Tailwind](https://tailwindcss.com/), JSON validation through [Ajv](https://ajv.js.org/) and [Vitest](https://vitest.dev/), formatted using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
 
 ### Features
 
@@ -34,7 +34,7 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
   - The `skills` object within the `rewards` object contains arrays of skills that the quest rewards XP in.
     - `allOf`: XP in these skills are always rewarded.
     - `anyOf`: XP rewards are given as a choice for these skills.
-    - `xsomeOf`: XP is only potentially awarded in these skills, either one, some, or none, such as in the case of 'Observatory Quest' and 'Tai Brwo Wannai Trio'.
+    - `xsomeOf`: XP is only potentially awarded in these skills, either one, some, or none, such as in the case of 'Observatory Quest' and 'Tai Bwo Wannai Trio'.
 - [Requirements](#Requirements)
   - Can contain `main`, `ironman`, or neither. `ironman` requirements need to be fulfilled in addition to `main` requirements.
 - [Concern](#Concern)

@@ -10,21 +10,18 @@
 	}
 
 	let dialog: HTMLDialogElement;
-	const settings = $Settings;
-
-	$: Settings.update((current) => ({ ...current, ...settings }));
 </script>
 
 <Dialog bind:dialog title="Settings">
 	<SettingsSection title="General">
 		<SettingsItem item="Ironman btw">
-			<CheckInput bind:checked={settings.general__ironman} />
+			<CheckInput bind:checked={$Settings.general__ironman} />
 		</SettingsItem>
 
 		<hr class="h-px my-1 bg-birch-900 border-0" />
 
 		<SettingsItem item="Require recommended stats">
-			<CheckInput bind:checked={settings.general__recommended} />
+			<CheckInput bind:checked={$Settings.general__recommended} />
 		</SettingsItem>
 	</SettingsSection>
 
@@ -32,19 +29,19 @@
 
 	<SettingsSection title="Show Tasks">
 		<SettingsItem item="That require combat">
-			<CheckInput bind:checked={settings.show__combat} />
+			<CheckInput bind:checked={$Settings.show__combat} />
 		</SettingsItem>
 
 		<hr class="h-px my-1 bg-birch-900 border-0" />
 
 		<SettingsItem item="That are completed">
-			<CheckInput bind:checked={settings.show__completed} />
+			<CheckInput bind:checked={$Settings.show__completed} />
 		</SettingsItem>
 
 		<hr class="h-px my-1 bg-birch-900 border-0" />
 
 		<SettingsItem item="That are upcoming">
-			<NumberInput bind:value={settings.show__upcoming} min={0} max={99} />
+			<NumberInput bind:value={$Settings.show__upcoming} min={0} max={99} />
 		</SettingsItem>
 	</SettingsSection>
 </Dialog>

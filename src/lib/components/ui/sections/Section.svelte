@@ -13,7 +13,7 @@
 			<slot name="controls" />
 		</div>
 	</div>
-	<div class="{htmlClass} pt-1 px-1">
+	<div class="{htmlClass} pt-1 px-1 gap-5 lg:gap-4 xl:gap-3">
 		<slot />
 	</div>
 </section>

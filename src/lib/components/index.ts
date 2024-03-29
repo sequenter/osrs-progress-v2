@@ -1,6 +1,7 @@
 export { default as Achievements } from './ui/sections/Achievements.svelte';
 export { default as ActionButton } from './ui/ActionButton.svelte';
 export { default as CheckInput } from './ui/CheckInput.svelte';
+export { default as Collections } from './ui/sections/Collections.svelte';
 export { default as Controls } from './ui/Controls.svelte';
 export { default as NumberInput } from './ui/NumberInput.svelte';
 export { default as Pets } from './ui/sections/Pets.svelte';

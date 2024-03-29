@@ -1,5 +1,6 @@
 import type {
 	Achievement,
+	Collection,
 	Concern,
 	Pet,
 	Quest,
@@ -69,10 +70,28 @@ export const getPets = (
 	return arr;
 };
 
+export const getCollections = (
+	collections: Collection[],
+	skillsStore: SkillDetails,
+	settingsStore: SettingDetails,
+	questsStore: QuestDetails
+) => {
+	const arr: (Collection & { upcoming: boolean })[] = [];
+	const instance = checkRequirements.getInstance(skillsStore, settingsStore, questsStore);
+
+	collections.forEach((collection) => {
+		const result = instance.isFulfilled(collection.requirements);
+
+		result.fulfilled && arr.push({ ...collection, upcoming: result.upcoming });
+	});
+
+	return arr;
+};
+
 const rewardsUnlocked = (skills: RewardSkills, skillsStore: SkillDetails) => {
 	return (
-		(skills.allOf?.every((skill) => !skillsStore.skills[skill].locked) ?? true) &&
-		(skills.anyOf?.some((skill) => !skillsStore.skills[skill].locked) ?? true)
+		(skills.allOf?.every((skill) => !skillsStore.items[skill].locked) ?? true) &&
+		(skills.anyOf?.some((skill) => !skillsStore.items[skill].locked) ?? true)
 	);
 };
 
@@ -157,7 +176,7 @@ class checkRequirements {
 	};
 
 	private checkQuests = (quests: string[]) => {
-		return quests.every((quest) => this.questsStore.quests.includes(quest));
+		return quests.every((quest) => this.questsStore.items.includes(quest));
 	};
 
 	private checkCombat = (combat: boolean) => {
@@ -184,7 +203,7 @@ class checkRequirements {
 	};
 
 	private checkSkill = ([key, value]: [Skill, number]) => {
-		const skill = this.skillsStore.skills[key];
+		const skill = this.skillsStore.items[key];
 		const upcoming = skill.level + this.settingsStore.show__upcoming >= value;
 
 		this.isUpcoming = this.isUpcoming || (!skill.locked && upcoming != skill.level >= value);

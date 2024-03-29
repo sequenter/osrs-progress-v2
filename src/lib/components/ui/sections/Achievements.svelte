@@ -11,25 +11,26 @@
 	import { Skills } from '$stores/skills.store';
 
 	let achievements: (Achievement & { upcoming: boolean })[];
-	let show = true;
 
-	$: achievements = getAchievements(
-		ACHIEVEMENTS as Achievement[],
-		$Skills,
-		$Settings,
-		$Quests
-	).sort(
-		(a, b) =>
+	$: $Achievements,
+		(achievements = getAchievements(
+			ACHIEVEMENTS as Achievement[],
+			$Skills,
+			$Settings,
+			$Quests
+		).sort(compare));
+
+	const compare = (a: Achievement, b: Achievement) => {
+		return (
 			+$Achievements.includes(a.task) - +$Achievements.includes(b.task) ||
 			a.diary.localeCompare(b.diary) ||
 			DIFFICULTY_COMPARE[a.difficulty] - DIFFICULTY_COMPARE[b.difficulty]
-	);
+		);
+	};
 
-	Achievements.subscribe(() => {
-		// Completing achievements only adds them to the achievements store with no further processing required,
-		// and as such 'getAchievements' does not have to be called again.
-		achievements = achievements;
-	});
+	const isComplete = (task: string) => {
+		return $Achievements.includes(task);
+	};
 
 	const canShow = (task: string) => {
 		return $Settings.show__completed || !$Achievements.includes(task);
@@ -45,10 +46,14 @@
 	/>
 
 	<svelte:fragment slot="controls">
-		<Controls complete={$Achievements.length} total={achievements.length} bind:show />
+		<Controls
+			complete={$Achievements.length}
+			total={achievements.length}
+			bind:show={$Settings.show.achievements}
+		/>
 	</svelte:fragment>
 
-	{#if show}
+	{#if $Settings.show.achievements}
 		{#each achievements as achievement}
 			{#if canShow(achievement.task)}
 				<AchievementTile
@@ -57,6 +62,7 @@
 					difficulty={achievement.difficulty}
 					task={achievement.task}
 					upcoming={achievement.upcoming}
+					complete={isComplete(achievement.task)}
 				/>
 			{/if}
 		{/each}

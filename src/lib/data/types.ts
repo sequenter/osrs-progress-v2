@@ -42,6 +42,13 @@ export interface Pet {
 	requirements: Requirements;
 }
 
+export interface Collection {
+	img: string;
+	name: string;
+	items: string[];
+	requirements: Requirements;
+}
+
 export interface RewardSkills {
 	allOf?: Skill[];
 	anyOf?: Skill[];

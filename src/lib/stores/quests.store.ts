@@ -1,18 +1,8 @@
-import { getItem, setItem } from '$lib/utils/storage.utils';
-import { writable } from 'svelte/store';
+import { baseStore } from '$lib/utils/store.utils';
 
 export interface QuestDetails {
-	quests: string[];
+	items: string[];
 	qp: number;
 }
 
-export const Quests = writable<QuestDetails>(
-	getItem('quests') || {
-		quests: [],
-		qp: 0
-	}
-);
-
-Quests.subscribe((val) => {
-	setItem('quests', val);
-});
+export const Quests = baseStore('quests', { items: [], qp: 0 } as QuestDetails);

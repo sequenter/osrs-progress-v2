@@ -1,5 +1,4 @@
-import { getItem, setItem } from '$lib/utils/storage.utils';
-import { writable } from 'svelte/store';
+import { baseStore } from '$lib/utils/store.utils';
 
 export interface SettingDetails {
 	general__ironman: boolean;
@@ -7,18 +6,24 @@ export interface SettingDetails {
 	show__combat: boolean;
 	show__completed: boolean;
 	show__upcoming: number;
+	show: {
+		achievements: boolean;
+		quests: boolean;
+		pets: boolean;
+		collections: boolean;
+	};
 }
 
-const defaultStore: SettingDetails = getItem('settings') || {
+export const Settings = baseStore('settings', {
 	general__ironman: false,
 	general__recommended: false,
 	show__combat: false,
 	show__completed: false,
-	show__upcoming: 10
-};
-
-export const Settings = writable<SettingDetails>(defaultStore);
-
-Settings.subscribe((val) => {
-	setItem('settings', val);
-});
+	show__upcoming: 10,
+	show: {
+		achievements: true,
+		quests: true,
+		pets: true,
+		collections: true
+	}
+} as SettingDetails);

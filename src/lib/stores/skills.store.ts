@@ -1,6 +1,5 @@
-import { getItem, setItem } from '$lib/utils/storage.utils';
 import type { Skill } from '$lib/data/types';
-import { writable } from 'svelte/store';
+import { baseStore } from '$lib/utils/store.utils';
 
 interface SkillDetail {
 	level: number;
@@ -8,12 +7,12 @@ interface SkillDetail {
 }
 
 export interface SkillDetails {
-	skills: { [key in Skill]: SkillDetail };
+	items: { [key in Skill]: SkillDetail };
 	combatLevel: number;
 }
 
-const defaultStore: SkillDetails = getItem('skills') || {
-	skills: {
+export const Skills = baseStore('skills', {
+	items: {
 		Attack: { level: 1, locked: true },
 		Strength: { level: 1, locked: true },
 		Defence: { level: 1, locked: true },
@@ -39,10 +38,4 @@ const defaultStore: SkillDetails = getItem('skills') || {
 		Farming: { level: 1, locked: true }
 	},
 	combatLevel: 3
-};
-
-export const Skills = writable<SkillDetails>(defaultStore);
-
-Skills.subscribe((val) => {
-	setItem('skills', val);
-});
+} as SkillDetails);
