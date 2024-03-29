@@ -36,6 +36,12 @@ export interface Quest {
 	};
 }
 
+export interface Pet {
+	img: string;
+	name: string;
+	requirements: Requirements;
+}
+
 export interface RewardSkills {
 	allOf?: Skill[];
 	anyOf?: Skill[];

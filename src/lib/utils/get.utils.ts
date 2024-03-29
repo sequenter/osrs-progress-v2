@@ -1,6 +1,7 @@
 import type {
 	Achievement,
 	Concern,
+	Pet,
 	Quest,
 	Requirements,
 	RewardSkills,
@@ -45,6 +46,24 @@ export const getQuests = (
 			: true;
 
 		skillRewards && result.fulfilled && arr.push({ ...quest, upcoming: result.upcoming });
+	});
+
+	return arr;
+};
+
+export const getPets = (
+	pets: Pet[],
+	skillsStore: SkillDetails,
+	settingsStore: SettingDetails,
+	questsStore: QuestDetails
+) => {
+	const arr: (Pet & { upcoming: boolean })[] = [];
+	const instance = checkRequirements.getInstance(skillsStore, settingsStore, questsStore);
+
+	pets.forEach((pet) => {
+		const result = instance.isFulfilled(pet.requirements);
+
+		result.fulfilled && arr.push({ ...pet, upcoming: result.upcoming });
 	});
 
 	return arr;
