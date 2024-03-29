@@ -21,7 +21,10 @@
 	};
 </script>
 
-<Section title="Pets">
+<Section
+	title="Pets"
+	htmlClass="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-4 xl:gap-3"
+>
 	<img slot="icon" class="me-3 w-8 h-8" src="$lib/assets/icons/Pets.png" alt="Pets icon" />
 
 	<svelte:fragment slot="controls">
