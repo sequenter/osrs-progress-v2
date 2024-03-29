@@ -765,10 +765,10 @@
 	},
 	{
 		"difficulty": "Novice",
-		"img": "15 August 2002",
+		"img": "Cattleprod",
 		"length": "Short",
 		"name": "Sheep Herder",
-		"release": "Cattleprod",
+		"release": "15 August 2002",
 		"requirements": {},
 		"rewards": {
 			"QP": 4
@@ -7045,5 +7045,89 @@
 			]
 		},
 		"rewards": {}
+	},
+	{
+		"difficulty": "Novice",
+		"img": "Killer's knife",
+		"length": "Short",
+		"name": "Misthalin Mystery",
+		"release": "26 January 2017",
+		"requirements": {},
+		"rewards": {
+			"QP": 1,
+			"Skills": {
+				"allOf": ["Crafting"]
+			}
+		}
+	},
+	{
+		"difficulty": "Intermediate",
+		"img": "Poison (item)",
+		"length": "Short",
+		"name": "The Corsair Curse",
+		"release": "7 December 2017",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"combat": true
+						}
+					]
+				}
+			]
+		},
+		"rewards": {
+			"QP": 2
+		}
+	},
+	{
+		"difficulty": "Novice",
+		"img": "Ancient casket",
+		"length": "Very Short",
+		"name": "X Marks the Spot",
+		"release": "7 February 2019",
+		"requirements": {},
+		"rewards": {
+			"QP": 1
+		}
+	},
+	{
+		"difficulty": "Novice",
+		"img": "Steak sandwich",
+		"length": "Short",
+		"name": "Below Ice Mountain",
+		"release": "14 April 2021",
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"QP": 16
+						}
+					]
+				},
+				{
+					"concern": "Defeat the ancient guardian",
+					"detail": [
+						{
+							"combat": true
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Mining": 10
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		"rewards": {
+			"QP": 1
+		}
 	}
 ]

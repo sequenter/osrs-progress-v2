@@ -1,4 +1,13 @@
-import type { Achievement, Concern, Requirements, Skill, SkillDetail } from '$lib/data/types';
+import type {
+	Achievement,
+	Concern,
+	Quest,
+	Requirements,
+	RewardSkills,
+	Skill,
+	SkillDetail
+} from '$lib/data/types';
+import type { QuestDetails } from '$stores/quests.store';
 import type { SettingDetails } from '$stores/settings.store';
 import type { SkillDetails } from '$stores/skills.store';
 
@@ -6,7 +15,7 @@ export const getAchievements = (
 	achievements: Achievement[],
 	skillsStore: SkillDetails,
 	settingsStore: SettingDetails,
-	questsStore: string[]
+	questsStore: QuestDetails
 ) => {
 	const arr: (Achievement & { upcoming: boolean })[] = [];
 	const instance = checkRequirements.getInstance(skillsStore, settingsStore, questsStore);
@@ -20,10 +29,38 @@ export const getAchievements = (
 	return arr;
 };
 
+export const getQuests = (
+	quests: Quest[],
+	skillsStore: SkillDetails,
+	settingsStore: SettingDetails,
+	questsStore: QuestDetails
+) => {
+	const arr: (Quest & { upcoming: boolean })[] = [];
+	const instance = checkRequirements.getInstance(skillsStore, settingsStore, questsStore);
+
+	quests.forEach((quest) => {
+		const result = instance.isFulfilled(quest.requirements);
+		const skillRewards = quest.rewards.Skills
+			? rewardsUnlocked(quest.rewards.Skills, skillsStore)
+			: true;
+
+		skillRewards && result.fulfilled && arr.push({ ...quest, upcoming: result.upcoming });
+	});
+
+	return arr;
+};
+
+const rewardsUnlocked = (skills: RewardSkills, skillsStore: SkillDetails) => {
+	return (
+		(skills.allOf?.every((skill) => !skillsStore.skills[skill].locked) ?? true) &&
+		(skills.anyOf?.some((skill) => !skillsStore.skills[skill].locked) ?? true)
+	);
+};
+
 class checkRequirements {
 	private static instance: checkRequirements;
 
-	private questsStore!: string[];
+	private questsStore!: QuestDetails;
 	private settingsStore!: SettingDetails;
 	private skillsStore!: SkillDetails;
 	private isUpcoming!: boolean;
@@ -31,7 +68,7 @@ class checkRequirements {
 	public static getInstance = (
 		skillsStore: SkillDetails,
 		settingsStore: SettingDetails,
-		questsStore: string[]
+		questsStore: QuestDetails
 	): checkRequirements => {
 		if (checkRequirements.instance) {
 			checkRequirements.instance.update(skillsStore, settingsStore, questsStore);
@@ -45,7 +82,7 @@ class checkRequirements {
 	private constructor(
 		skillStore: SkillDetails,
 		settingsStore: SettingDetails,
-		questsStore: string[]
+		questsStore: QuestDetails
 	) {
 		this.update(skillStore, settingsStore, questsStore);
 	}
@@ -53,7 +90,7 @@ class checkRequirements {
 	public update = (
 		skillStore: SkillDetails,
 		settingsStore: SettingDetails,
-		questsStore: string[]
+		questsStore: QuestDetails
 	) => {
 		this.questsStore = questsStore;
 		this.settingsStore = settingsStore;
@@ -85,6 +122,7 @@ class checkRequirements {
 			let fulfilled = true;
 
 			if (detail.combat) fulfilled = this.checkCombat(detail.combat);
+			if (fulfilled && detail.QP) fulfilled = this.checkQuestPoints(detail.QP);
 			if (fulfilled && detail.combatLevel) fulfilled = this.checkCombatLevel(detail.combatLevel);
 			if (fulfilled && detail.quests) fulfilled = this.checkQuests(detail.quests);
 			if (fulfilled && detail.skills) fulfilled = this.checkSkills(detail.skills);
@@ -95,8 +133,12 @@ class checkRequirements {
 		return false;
 	};
 
+	private checkQuestPoints = (qp: number) => {
+		return this.questsStore.qp >= qp;
+	};
+
 	private checkQuests = (quests: string[]) => {
-		return quests.every((quest) => this.questsStore.includes(quest));
+		return quests.every((quest) => this.questsStore.quests.includes(quest));
 	};
 
 	private checkCombat = (combat: boolean) => {
@@ -124,11 +166,10 @@ class checkRequirements {
 
 	private checkSkill = ([key, value]: [Skill, number]) => {
 		const skill = this.skillsStore.skills[key];
+		const upcoming = skill.level + this.settingsStore.show__upcoming >= value;
 
-		this.isUpcoming =
-			!skill.locked &&
-			skill.level + this.settingsStore.show__upcoming >= value != skill.level >= value;
+		this.isUpcoming = this.isUpcoming || (!skill.locked && upcoming != skill.level >= value);
 
-		return !skill.locked && skill.level + this.settingsStore.show__upcoming >= value;
+		return !skill.locked && upcoming;
 	};
 }

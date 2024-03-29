@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { ActionButton, Section } from '$lib/components';
 	import { Settings as Icon, SVG } from '$lib/assets';
-	import { Section } from '$lib/components';
 	import { Settings } from '$lib/components';
 	import { SKILLS } from '$constant/Global';
 	import { SkillTile } from '$lib/components/ui/tiles';
@@ -18,9 +18,11 @@
 >
 	<img slot="icon" class="me-3 w-8 h-8" src="$lib/assets/icons/Stats.png" alt="Skills icon" />
 
-	<button slot="controls" on:click={handleSettings}>
-		<SVG htmlClass="w-8 h-8"><Icon /></SVG>
-	</button>
+	<svelte:fragment slot="controls">
+		<ActionButton onClick={handleSettings}>
+			<SVG htmlClass="w-8 h-8"><Icon /></SVG>
+		</ActionButton>
+	</svelte:fragment>
 
 	{#each SKILLS as skill}
 		<SkillTile {skill} min={skill === 'Hitpoints' ? 10 : 1} max={99} />

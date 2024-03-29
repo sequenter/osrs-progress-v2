@@ -30,6 +30,13 @@ export const QUEST_DIFFICULTY = [
 
 export const QUEST_LENGTH = ['Very Short', 'Short', 'Medium', 'Long', 'Very Long'] as const;
 
+export const DIFFICULTY_COMPARE: { [key in (typeof ACHIEVEMENT_DIFFICULTY)[number]]: number } = {
+	Easy: 1,
+	Medium: 2,
+	Hard: 3,
+	Elite: 4
+};
+
 export const COMBAT_SKILLS = [
 	'Attack',
 	'Strength',

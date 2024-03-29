@@ -32,8 +32,13 @@ export interface Quest {
 	requirements: Requirements;
 	rewards: {
 		QP?: number;
-		skills?: Skill[];
+		Skills?: RewardSkills;
 	};
+}
+
+export interface RewardSkills {
+	allOf?: Skill[];
+	anyOf?: Skill[];
 }
 
 export interface Requirements {
