@@ -54,8 +54,10 @@
 			<slot name="info" />
 		{/if}
 	</div>
+	<div class="flex flex-col grow">
+		<slot />
+	</div>
 	<hr class="h-px my-2 bg-birch-800 border-0" />
-	<slot />
 	<div class="flex justify-between items-center">
 		<span
 			class={clsx(

@@ -10,7 +10,7 @@ export const TEXT_COLOUR: { [key in AchievementDifficulty | QuestDifficulty]: st
 	Experienced: 'text-fuchsia-400',
 	Master: 'text-yellow-400',
 	Grandmaster: 'text-red-400',
-	Special: 'text-gray-500'
+	Special: 'text-emerald-400'
 } as const;
 
 export const SECTION_COLOUR: { [key in Section]: { text: string; background: string } } = {

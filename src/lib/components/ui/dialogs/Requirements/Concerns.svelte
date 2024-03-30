@@ -2,6 +2,7 @@
 	import { Check, Cross, SVG } from '$lib/assets';
 	import { clsx } from 'clsx';
 	import type { Concern } from '$lib/data/types';
+	import GeneralConcern from './GeneralConcern.svelte';
 	import { Quests } from '$stores/quests.store';
 	import { Settings } from '$stores/settings.store';
 	import SkillConcern from './SkillConcern.svelte';
@@ -9,12 +10,12 @@
 
 	export let concerns: Concern[];
 
-	const combatLevelFulfilled = (combatLevel: number) => {
-		return $Skills.combatLevel >= combatLevel;
+	const combatLevelFulfilled = (combatLevel: number | undefined) => {
+		return !!combatLevel && $Skills.combatLevel >= combatLevel;
 	};
 
-	const qpFulfilled = (qp: number) => {
-		return $Quests.qp >= qp;
+	const qpFulfilled = (qp: number | undefined) => {
+		return !!qp && $Quests.qp >= qp;
 	};
 
 	const questFulfilled = (quest: string) => {
@@ -29,63 +30,13 @@
 		<div class="flex flex-col rounded-lg bg-birch-500">
 			{#if combat || combatLevel || QP}
 				<div class="grid grid-cols-3 divide-x divide-birch-900">
-					<div class="flex flex-col gap-2 items-center pb-2">
-						<h2 class="text-lg font-bold">Combat</h2>
-						{#if combat}
-							<div class="flex justify-between items-center w-full px-3">
-								<span
-									class={clsx('text-md', $Settings.show__combat ? 'text-lime-400' : 'text-red-400')}
-									>Enabled</span
-								>
-								<SVG htmlClass="w-4 h-4">
-									{#if $Settings.show__combat}
-										<Check />
-									{:else}
-										<Cross />
-									{/if}
-								</SVG>
-							</div>
-						{/if}
-					</div>
-
-					<div class="flex flex-col gap-2 items-center pb-2">
-						<h2 class="text-lg font-bold">Combat Level</h2>
-						{#if combatLevel}
-							<div class="flex justify-between items-center w-full px-3">
-								<span
-									class={clsx(
-										'text-md',
-										combatLevelFulfilled(combatLevel) ? 'text-lime-400' : 'text-red-400'
-									)}>{combatLevel}</span
-								>
-								<SVG htmlClass="w-4 h-4">
-									{#if combatLevelFulfilled(combatLevel)}
-										<Check />
-									{:else}
-										<Cross />
-									{/if}
-								</SVG>
-							</div>
-						{/if}
-					</div>
-
-					<div class="flex flex-col gap-2 items-center pb-2">
-						<h2 class="text-lg font-bold">Quest Points</h2>
-						{#if QP}
-							<div class="flex justify-between items-center w-full px-3">
-								<span class={clsx('text-md', qpFulfilled(QP) ? 'text-lime-400' : 'text-red-400')}
-									>{QP}</span
-								>
-								<SVG htmlClass="w-4 h-4">
-									{#if qpFulfilled(QP)}
-										<Check />
-									{:else}
-										<Cross />
-									{/if}
-								</SVG>
-							</div>
-						{/if}
-					</div>
+					<GeneralConcern title="Combat" value={combat} fulfilled={$Settings.show__combat} />
+					<GeneralConcern
+						title="Combat Level"
+						value={combatLevel}
+						fulfilled={combatLevelFulfilled(combatLevel)}
+					/>
+					<GeneralConcern title="Quest Points" value={QP} fulfilled={qpFulfilled(QP)} />
 				</div>
 			{/if}
 			{#if skills}
@@ -98,7 +49,7 @@
 			{#if quests}
 				<hr class="h-px bg-birch-900 border-0" />
 				<div class="flex flex-col mb-2">
-					<h2 class="text-lg font-bold ps-3">Quests</h2>
+					<h2 class="text-lg font-medium ps-3">Quests</h2>
 					{#each quests as quest}
 						<div class="flex justify-between items-center w-full px-3">
 							<span

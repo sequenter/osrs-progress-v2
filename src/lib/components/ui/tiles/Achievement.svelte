@@ -21,6 +21,6 @@
 </script>
 
 <Tile {title} {complete} {difficulty} {img} {upcoming} {requirements} {onPress}>
-	<span class="text-md text-yellow-400 grow">{task}</span>
 	<hr class="h-px my-2 bg-birch-800 border-0" />
+	<span class="text-md text-yellow-400">{task}</span>
 </Tile>

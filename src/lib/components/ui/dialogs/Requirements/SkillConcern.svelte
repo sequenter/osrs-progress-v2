@@ -25,7 +25,7 @@
 </script>
 
 <div class="flex flex-col items-center pb-2">
-	<h2 class="text-lg font-bold">{title}</h2>
+	<h2 class="text-lg font-medium">{title}</h2>
 	{#if skills}
 		{#each Object.entries(skills) as [skill, level]}
 			<div class="flex justify-between items-center w-full px-3">

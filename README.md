@@ -8,10 +8,10 @@ Written with [Svelte](https://svelte.dev/), [Typescript](https://www.typescriptl
 
 ### Features
 
-- Track skill progress by unlocking and levelling manually, or obtain via username.
 - View available achievements, quests, pets and collections (referred to as _tasks_) that reveal based on skill levels and quest completions.
-- View current task completion progress.
+- View current skills, quest points and task completion progress.
 - View task requirements through their info dialogs.
+- Progress is saved automatically through the use of `localStorage`.
 - Settings toggles:
   - **Combat**: Enable combat and show combat related tasks.
   - **Completed**: Show tasks that have been completed.
