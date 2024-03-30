@@ -19,6 +19,14 @@
 		})();
 </script>
 
+<svelte:head>
+	<title>OSRS Progress</title>
+	<meta
+		name="description"
+		content="Track achievements, quests, pets and collections that reveal themselves based on skill levels and quest completions"
+	/>
+</svelte:head>
+
 <Skills />
 <hr class="h-px mx-5 bg-birch-950 border-0" />
 <Achievements />
