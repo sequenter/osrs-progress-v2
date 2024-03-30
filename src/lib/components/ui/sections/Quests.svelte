@@ -48,6 +48,7 @@
 					name={quest.name}
 					upcoming={quest.upcoming}
 					complete={isComplete(quest.name)}
+					requirements={quest.requirements}
 				/>
 			{/if}
 		{/each}

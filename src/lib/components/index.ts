@@ -11,3 +11,4 @@ export { default as Sidebar } from './ui/sidebar/Sidebar.svelte';
 export { default as Skills } from './ui/sections/Skills.svelte';
 export { default as SettingsDialog } from './ui/dialogs/Settings/Settings.svelte';
 export { default as CollectionDialog } from './ui/dialogs/Collection/Collection.svelte';
+export { default as RequirementsDialog } from './ui/dialogs/Requirements/Requirements.svelte';

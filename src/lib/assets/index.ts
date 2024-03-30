@@ -1,8 +1,12 @@
 export { default as Close } from './svg/Close.svelte';
+export { default as Cross } from './svg/Cross.svelte';
+export { default as Check } from './svg/Check.svelte';
 export { default as Down } from './svg/Down.svelte';
 export { default as Download } from './svg/Download.svelte';
 export { default as Help } from './svg/Help.svelte';
 export { default as Hide } from './svg/Hide.svelte';
+export { default as Info } from './svg/Info.svelte';
+export { default as Minus } from './svg/Minus.svelte';
 export { default as Show } from './svg/Show.svelte';
 export { default as Left } from './svg/Left.svelte';
 export { default as Right } from './svg/Right.svelte';

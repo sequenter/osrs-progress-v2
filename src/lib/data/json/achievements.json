@@ -95,15 +95,15 @@
 					"concern": "Obtain a rusty sword",
 					"detail": [
 						{
+							"combat": true
+						},
+						{
 							"skills": {
 								"anyOf": {
 									"Fishing": 15,
 									"Thieving": 15
 								}
 							}
-						},
-						{
-							"combat": true
 						}
 					]
 				}
@@ -3132,7 +3132,7 @@
 							}
 						},
 						{
-							"QP": 303
+							"QP": 308
 						}
 					]
 				}
@@ -8758,7 +8758,7 @@
 					"concern": "Mandatory",
 					"detail": [
 						{
-							"QP": 303
+							"QP": 308
 						}
 					]
 				}

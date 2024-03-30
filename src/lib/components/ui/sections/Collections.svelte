@@ -55,6 +55,7 @@
 					name={collection.name}
 					upcoming={collection.upcoming}
 					complete={isComplete(collection.name)}
+					requirements={collection.requirements}
 					{onPress}
 				/>
 			{/if}

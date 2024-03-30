@@ -1,8 +1,12 @@
 <script lang="ts">
-	import type { AchievementDifficulty, QuestDifficulty } from '$lib/data/types';
+	import type { AchievementDifficulty, QuestDifficulty, Requirements } from '$lib/data/types';
 	import { iconSrc, onIconError } from '$lib/utils/icon.utils';
+	import { Info, SVG } from '$lib/assets';
+	import { ActionButton } from '$lib/components';
 	import { clsx } from 'clsx';
 	import { press } from 'svelte-gestures';
+	import { Requirements as RequirementsStore } from '$lib/stores/requirements.store';
+	import { Settings } from '$stores/settings.store';
 	import { TEXT_COLOUR } from '$constant/Mapper';
 
 	export let img: string;
@@ -11,9 +15,15 @@
 	export let upcoming: boolean;
 	export let htmlClass = '';
 	export let difficulty: QuestDifficulty | AchievementDifficulty | undefined = undefined;
+	export let requirements: Requirements;
 	export let onPress: () => void;
 
 	$: src = iconSrc(img);
+
+	$: showRequirements = !!(
+		requirements.main ||
+		($Settings.general__ironman && requirements.ironman)
+	);
 </script>
 
 <div
@@ -46,11 +56,22 @@
 	</div>
 	<hr class="h-px my-2 bg-birch-800 border-0" />
 	<slot />
-	<span
-		class={clsx(
-			'text-status text-md',
-			complete && 'text-green-400',
-			!complete && !upcoming && 'text-gray-400'
-		)}>{complete ? 'Complete' : upcoming ? 'Upcoming' : 'Incomplete'}</span
-	>
+	<div class="flex justify-between items-center">
+		<span
+			class={clsx(
+				'text-status text-md',
+				complete && 'text-green-400',
+				!complete && !upcoming && 'text-gray-400'
+			)}>{complete ? 'Complete' : upcoming ? 'Upcoming' : 'Incomplete'}</span
+		>
+		{#if showRequirements}
+			<ActionButton
+				onClick={() => {
+					$RequirementsStore = { ...requirements, ...{ title } };
+				}}
+			>
+				<SVG htmlClass="w-6 h-6"><Info /></SVG>
+			</ActionButton>
+		{/if}
+	</div>
 </div>

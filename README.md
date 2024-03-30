@@ -15,6 +15,7 @@ Written with [Svelte](https://svelte.dev/), [Typescript](https://www.typescriptl
 - Settings toggles:
   - **Combat**: Enable combat and show combat related tasks.
   - **Completed**: Show tasks that have been completed.
+  - **Disregard Requirements**: Show all tasks, regardless of requirements.
   - **Ironman**: Show tasks that have extra ironman requirements that have been fulfilled.
   - **Recommended**: Tasks will only show when _recommended_ (alongside required) stats have been fulfilled.
   - **Upcoming**: Show tasks that that aren't quite unlocked, but will be soon within a given amount of levels.

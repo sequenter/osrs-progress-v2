@@ -63,6 +63,7 @@
 					task={achievement.task}
 					upcoming={achievement.upcoming}
 					complete={isComplete(achievement.task)}
+					requirements={achievement.requirements}
 				/>
 			{/if}
 		{/each}

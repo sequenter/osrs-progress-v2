@@ -25,7 +25,8 @@ export const getAchievements = (
 	achievements.forEach((achievement) => {
 		const result = instance.isFulfilled(achievement.requirements);
 
-		result.fulfilled && arr.push({ ...achievement, upcoming: result.upcoming });
+		(result.fulfilled || settingsStore.general__all) &&
+			arr.push({ ...achievement, upcoming: result.upcoming });
 	});
 
 	return arr;
@@ -46,7 +47,8 @@ export const getQuests = (
 			? rewardsUnlocked(quest.rewards.Skills, skillsStore)
 			: true;
 
-		skillRewards && result.fulfilled && arr.push({ ...quest, upcoming: result.upcoming });
+		((skillRewards && result.fulfilled) || settingsStore.general__all) &&
+			arr.push({ ...quest, upcoming: result.upcoming });
 	});
 
 	return arr;
@@ -64,7 +66,8 @@ export const getPets = (
 	pets.forEach((pet) => {
 		const result = instance.isFulfilled(pet.requirements);
 
-		result.fulfilled && arr.push({ ...pet, upcoming: result.upcoming });
+		(result.fulfilled || settingsStore.general__all) &&
+			arr.push({ ...pet, upcoming: result.upcoming });
 	});
 
 	return arr;
@@ -82,7 +85,8 @@ export const getCollections = (
 	collections.forEach((collection) => {
 		const result = instance.isFulfilled(collection.requirements);
 
-		result.fulfilled && arr.push({ ...collection, upcoming: result.upcoming });
+		(result.fulfilled || settingsStore.general__all) &&
+			arr.push({ ...collection, upcoming: result.upcoming });
 	});
 
 	return arr;

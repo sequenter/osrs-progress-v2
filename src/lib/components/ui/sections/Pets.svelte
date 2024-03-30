@@ -41,6 +41,7 @@
 					name={pet.name}
 					upcoming={pet.upcoming}
 					complete={isComplete(pet.name)}
+					requirements={pet.requirements}
 				/>
 			{/if}
 		{/each}

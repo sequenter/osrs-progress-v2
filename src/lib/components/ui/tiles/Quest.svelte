@@ -2,6 +2,7 @@
 	import type { QuestDifficulty } from '$lib/data/types';
 	import { QUESTS } from '$lib/data';
 	import { Quests } from '$stores/quests.store';
+	import type { Requirements } from '$lib/data/types';
 	import Tile from './Tile.svelte';
 	import { updateStoreArray } from '$lib/utils/store.utils';
 
@@ -10,6 +11,7 @@
 	export let name: string;
 	export let upcoming: boolean;
 	export let complete: boolean;
+	export let requirements: Requirements;
 
 	const onPress = () => {
 		$Quests.items = updateStoreArray($Quests.items, name);
@@ -27,4 +29,4 @@
 	};
 </script>
 
-<Tile {complete} {difficulty} {img} {onPress} {upcoming} title={name} />
+<Tile title={name} {complete} {difficulty} {img} {upcoming} {requirements} {onPress} />
