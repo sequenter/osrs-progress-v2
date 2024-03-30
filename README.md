@@ -2,6 +2,8 @@
 
 osrs-progress-v2 is an SPA, written with [SvelteKit](https://kit.svelte.dev/), that provides a UI to act as a companion to track progress on OldSchool Runescape. Originally written with spaghetti vanilla JavaScript (and a bit of ancient [jQuery](https://jquery.com/)), v2 was created to be a modern equivalent... with more features!
 
+osrs-progress-v2 is deployed on [GitHub pages](https://sequenter.github.io/osrs-progress-v2/).
+
 ### Technology Stack
 
 Written with [Svelte](https://svelte.dev/), [Typescript](https://www.typescriptlang.org/) and [Tailwind](https://tailwindcss.com/), JSON validation through [Ajv](https://ajv.js.org/) and [Vitest](https://vitest.dev/), formatted using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
