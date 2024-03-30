@@ -1678,6 +1678,25 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Kalphite Queen",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Ranged": 80,
+									"Prayer": 70,
+									"Hitpoints": 85
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill the Kalphite Queen"
@@ -2810,6 +2829,31 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Giant Mole",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 70,
+									"Strength": 70,
+									"Defence": 70,
+									"Prayer": 43
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 85,
+									"Prayer": 77
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill the Giant Mole beneath Falador Park"
@@ -2829,6 +2873,31 @@
 							"skills": {
 								"allOf": {
 									"Slayer": 72
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a skeletal wyvern",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 80,
+									"Prayer": 43
 								}
 							}
 						}
@@ -2897,6 +2966,34 @@
 						{
 							"combat": true,
 							"quests": ["Heroes' Quest"]
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a blue dragon",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 70,
+									"Strength": 70,
+									"Defence": 70,
+									"Prayer": 43
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Prayer": 43
+								},
+								"anyOf": {
+									"Ranged": 70,
+									"Magic": 70
+								}
+							}
 						}
 					]
 				}
@@ -3480,6 +3577,22 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Slay a brine rat",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 60,
+									"Strength": 60,
+									"Defence": 60
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Slay a brine rat"
@@ -4022,6 +4135,54 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Dagannoth Rex",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Magic": 75,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 45
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Dagannoth Prime",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 70,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 45
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Dagannoth Supreme",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 70,
+									"Strength": 70,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 45
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill each of the Dagannoth Kings"
@@ -4147,6 +4308,69 @@
 									"Strength": 70,
 									"Hitpoints": 70,
 									"Ranged": 70
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill General Graardor",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Magic": 75,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Commander Zilyana",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 80,
+									"Defence": 90,
+									"Prayer": 74
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill K'ril Tsutsaroth",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 90,
+									"Magic": 75,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Kree'arra",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 80,
+									"Magic": 80,
+									"Defence": 90,
+									"Prayer": 77
 								}
 							}
 						}
@@ -5017,6 +5241,36 @@
 								"allOf": {
 									"Firemaking": 35,
 									"Crafting": 11
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a mithril dragon",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Hitpoints": 80,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Hitpoints": 80,
+									"Prayer": 43
+								},
+								"anyOf": {
+									"Magic": 75,
+									"Ranged": 75
 								}
 							}
 						}
@@ -6404,6 +6658,7 @@
 					"concern": "Mandatory",
 					"detail": [
 						{
+							"combatLevel": 100,
 							"quests": ["Shilo Village"],
 							"skills": {
 								"allOf": {
@@ -7249,6 +7504,21 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a lizardman shaman",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 75,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill a lizardman shaman in the Lizardman Temple"
@@ -7478,6 +7748,23 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Skotizo",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 75,
+									"Strength": 75,
+									"Defence": 70,
+									"Prayer": 43
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Defeat Skotizo in the Catacombs of Kourend"
@@ -7526,6 +7813,23 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a hydra",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 90,
+									"Strength": 90,
+									"Defence": 90,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill a hydra in the Karuulm Slayer Dungeon"
@@ -7565,6 +7869,25 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Complete the Chambers of Xeric",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 90,
+									"Strength": 90,
+									"Defence": 90,
+									"Magic": 90,
+									"Ranged": 90,
+									"Prayer": 70
+								}
+							}
 						}
 					]
 				}
@@ -8120,11 +8443,8 @@
 					"concern": "Mandatory",
 					"detail": [
 						{
-							"quests": ["Lost City"],
-							"skills": {
-								"allOf": {},
-								"anyOf": {}
-							}
+							"combatLevel": 70,
+							"quests": ["Lost City"]
 						}
 					]
 				}
@@ -8845,6 +9165,7 @@
 					"concern": "Mandatory",
 					"detail": [
 						{
+							"combatLevel": 20,
 							"quests": ["Priest in Peril"]
 						}
 					]
@@ -9541,6 +9862,30 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a cave horror",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Magic": 70,
+									"Attack": 70,
+									"Defence": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 50,
+									"Defence": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill a Cave Horror"
@@ -9862,8 +10207,28 @@
 						{
 							"skills": {
 								"allOf": {
+									"Ranged": 70,
+									"Defence": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
 									"Attack": 70,
 									"Defence": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 70,
+									"Defence": 70
+								},
+								"anyOf": {
+									"Magic": 70,
+									"Strength": 70
 								}
 							}
 						}
@@ -11941,6 +12306,26 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Zulrah",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Defence": 70,
+									"Hitpoints": 80,
+									"Prayer": 45
+								},
+								"anyOf": {
+									"Ranged": 80,
+									"Magic": 85
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill Zulrah"
@@ -12079,6 +12464,22 @@
 							"skills": {
 								"allOf": {
 									"Slayer": 93
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Thermonuclear smoke devil",
+					"detail": [
+						{
+							"combatLevel": 90,
+							"skills": {
+								"allOf": {
+									"Hitpoints": 90,
+									"Magic": 94
 								}
 							}
 						}
@@ -12545,6 +12946,24 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill a green dragon",
+					"detail": [
+						{
+							"combatLevel": 80
+						},
+						{
+							"skills": {
+								"anyOf": {
+									"Ranged": 60,
+									"Prayer": 25
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill a green dragon in the Wilderness"
@@ -12897,6 +13316,32 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Chaos Elemental",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 70,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 75,
+									"Defence": 40,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		},
 		"task": "Kill the Chaos Elemental"
@@ -12913,6 +13358,49 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Crazy archaeologist",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 50,
+									"Magic": 50,
+									"Prayer": 40
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill the Chaos Fanatic",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 75,
+									"Defence": 70,
+									"Prayer": 37
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Scorpia",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Magic": 78,
+									"Prayer": 40
+								}
+							}
 						}
 					]
 				}
@@ -13022,6 +13510,74 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Callisto",
+					"detail": [
+						{
+							"combatLevel": 95,
+							"skills": {
+								"allOf": {
+									"Hitpoints": 90,
+									"Defence": 70,
+									"Prayer": 74
+								},
+								"anyOf": {
+									"Ranged": 90,
+									"Magic": 94
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Venenatis",
+					"detail": [
+						{
+							"combatLevel": 105,
+							"skills": {
+								"allOf": {
+									"Attack": 75,
+									"Strength": 90,
+									"Defence": 75,
+									"Hitpoints": 85,
+									"Prayer": 74
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Defence": 70,
+									"Hitpoints": 85,
+									"Prayer": 74
+								},
+								"anyOf": {
+									"Ranged": 85,
+									"Magic": 94
+								}
+							}
+						}
+					]
+				},
+				{
+					"concern": "Kill Vet'ion",
+					"detail": [
+						{
+							"combatLevel": 85,
+							"skills": {
+								"allOf": {
+									"Hitpoints": 85,
+									"Strength": 90,
+									"Attack": 85,
+									"Defence": 75,
+									"Prayer": 70
+								}
+							}
 						}
 					]
 				}

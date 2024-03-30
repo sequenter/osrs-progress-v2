@@ -74,6 +74,10 @@ const SCHEMA_REQUIREMENTS = {
 		main: {
 			items: SCHEMA_CONCERN,
 			type: 'array'
+		},
+		recommended: {
+			items: SCHEMA_CONCERN,
+			type: 'array'
 		}
 	},
 	type: 'object'
@@ -175,12 +179,9 @@ export const SCHEMA_COLLECTION = {
 		img: {
 			type: 'string'
 		},
-		requirements: SCHEMA_REQUIREMENTS,
-		task: {
-			type: 'string'
-		}
+		requirements: SCHEMA_REQUIREMENTS
 	},
-	required: ['name', 'img', 'requirements', 'items'],
+	required: ['items', 'name', 'img', 'requirements'],
 	type: 'object'
 } as const;
 
@@ -193,11 +194,8 @@ export const SCHEMA_PET = {
 		img: {
 			type: 'string'
 		},
-		requirements: SCHEMA_REQUIREMENTS,
-		task: {
-			type: 'string'
-		}
+		requirements: SCHEMA_REQUIREMENTS
 	},
-	required: ['name', 'img', 'requirements', 'items'],
+	required: ['name', 'img', 'requirements'],
 	type: 'object'
 } as const;

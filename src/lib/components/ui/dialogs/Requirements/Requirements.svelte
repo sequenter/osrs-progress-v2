@@ -14,15 +14,16 @@
 </script>
 
 <Dialog bind:dialog title={requirements?.title || ''} img={'Cake of guidance'}>
-	<div class="flex flex-col p-5 gap-1 overflow-scroll">
+	<div class="flex flex-col p-5 gap-3 overflow-scroll">
 		{#if requirements}
 			{#if requirements.main}
-				<h2 class="text-2xl">Main</h2>
-				<svelte:component this={Concerns} concerns={requirements.main} />
+				<svelte:component this={Concerns} concerns={requirements.main} title="Main" />
 			{/if}
 			{#if requirements.ironman && $Settings.general__ironman}
-				<h2 class="text-2xl pt-5">Ironman</h2>
-				<svelte:component this={Concerns} concerns={requirements.ironman} />
+				<svelte:component this={Concerns} concerns={requirements.ironman} title="Ironman" />
+			{/if}
+			{#if requirements.recommended}
+				<svelte:component this={Concerns} concerns={requirements.recommended} title="Recommended" />
 			{/if}
 		{/if}
 	</div>

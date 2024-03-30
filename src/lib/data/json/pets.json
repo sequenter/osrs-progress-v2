@@ -8,10 +8,30 @@
 					"concern": "Mandatory",
 					"detail": [
 						{
+							"combat": true,
 							"quests": ["Into the Abyss"],
 							"skills": {
 								"allOf": {
 									"Slayer": 85
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Abyssal Sire",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 85,
+									"Strength": 85,
+									"Defence": 85,
+									"Ranged": 85,
+									"Magic": 92,
+									"Prayer": 70
 								}
 							}
 						}
@@ -77,6 +97,31 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Giant Mole",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 70,
+									"Strength": 70,
+									"Defence": 70,
+									"Prayer": 43
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 85,
+									"Prayer": 77
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -91,6 +136,23 @@
 						{
 							"combat": true,
 							"quests": ["Desert Treasure II - The Fallen Empire"]
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Duke Sucellus",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 90,
+									"Strength": 90,
+									"Defence": 90,
+									"Prayer": 70
+								}
+							}
 						}
 					]
 				}
@@ -131,6 +193,23 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Duke Sucellus",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 90,
+									"Strength": 90,
+									"Defence": 90,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -144,6 +223,27 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Callisto",
+					"detail": [
+						{
+							"combatLevel": 95,
+							"skills": {
+								"allOf": {
+									"Hitpoints": 90,
+									"Defence": 70,
+									"Prayer": 74
+								},
+								"anyOf": {
+									"Ranged": 90,
+									"Magic": 94
+								}
+							}
 						}
 					]
 				}
@@ -183,6 +283,32 @@
 							"skills": {
 								"allOf": {
 									"Slayer": 91
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Cerberus",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 85,
+									"Strength": 85,
+									"Defence": 85,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Defence": 85,
+									"Prayer": 74,
+									"Ranged": 75
 								}
 							}
 						}
@@ -251,6 +377,22 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Alchemical Hydra",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 75,
+									"Hitpoints": 85,
+									"Prayer": 74
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -267,6 +409,24 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Complete the Inferno",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 90,
+									"Defence": 90,
+									"Prayer": 80,
+									"Magic": 94,
+									"Hitpoints": 90
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -280,6 +440,25 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Kalphite Queen",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Ranged": 80,
+									"Prayer": 70,
+									"Hitpoints": 85
+								}
+							}
 						}
 					]
 				}
@@ -316,6 +495,22 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill The Leviathan",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 90,
+									"Defence": 90,
+									"Prayer": 74
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -330,6 +525,26 @@
 						{
 							"combat": true,
 							"quests": ["Priest in Peril"]
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Complete the Theatre of Blood",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 95,
+									"Strength": 99,
+									"Defence": 95,
+									"Hitpoints": 95,
+									"Ranged": 99,
+									"Magic": 94,
+									"Prayer": 77
+								}
+							}
 						}
 					]
 				}
@@ -350,6 +565,25 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill The Nightmare",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 85,
+									"Strength": 85,
+									"Defence": 85,
+									"Hitpoints": 85,
+									"Magic": 85,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -367,6 +601,22 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Phantom Muspah",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 90,
+									"Defence": 80,
+									"Prayer": 74
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -381,6 +631,25 @@
 						{
 							"combat": true,
 							"quests": ["The Frozen Door"]
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Nex",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 95,
+									"Strength": 95,
+									"Defence": 90,
+									"Ranged": 90,
+									"Magic": 90,
+									"Prayer": 74
+								}
+							}
 						}
 					]
 				}
@@ -406,6 +675,22 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Grotesque Guardians",
+					"detail": [
+						{
+							"combatLevel": 90,
+							"skills": {
+								"allOf": {
+									"Defence": 70,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -419,6 +704,25 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Complete the Chambers of Xeric",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 90,
+									"Strength": 90,
+									"Defence": 90,
+									"Magic": 90,
+									"Ranged": 90,
+									"Prayer": 70
+								}
+							}
 						}
 					]
 				}
@@ -438,6 +742,32 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Chaos Elemental",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 70,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 75,
+									"Defence": 40,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -451,6 +781,23 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Dagannoth Prime",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 70,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 45
+								}
+							}
 						}
 					]
 				}
@@ -470,11 +817,28 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Dagannoth Rex",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Magic": 75,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 45
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
 	{
-		"img": "Pet dagannoth prime",
+		"img": "Pet dagannoth supreme",
 		"name": "Pet dagannoth supreme",
 		"requirements": {
 			"main": [
@@ -483,6 +847,24 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Dagannoth Supreme",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 70,
+									"Strength": 70,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 45
+								}
+							}
 						}
 					]
 				}
@@ -502,6 +884,33 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Corporeal Beast",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Hitpoints": 95,
+									"Attack": 94,
+									"Strength": 94,
+									"Defence": 94,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Hitpoints": 90,
+									"Ranged": 90,
+									"Prayer": 74
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -518,6 +927,24 @@
 							"skills": {
 								"allOf": {
 									"Strength": 70
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill General Graardor",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Magic": 75,
+									"Prayer": 70
 								}
 							}
 						}
@@ -545,6 +972,24 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill K'ril Tsutsaroth",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 90,
+									"Magic": 75,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -562,6 +1007,22 @@
 								"anyOf": {
 									"Slayer": 87,
 									"Magic": 50
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Kraken",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Magic": 85,
+									"Defence": 85,
+									"Hitpoints": 85
 								}
 							}
 						}
@@ -617,6 +1078,23 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Kree'arra",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 80,
+									"Magic": 80,
+									"Defence": 90,
+									"Prayer": 77
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -649,6 +1127,22 @@
 							"skills": {
 								"allOf": {
 									"Slayer": 93
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill the Thermonuclear smoke devil",
+					"detail": [
+						{
+							"combatLevel": 90,
+							"skills": {
+								"allOf": {
+									"Hitpoints": 90,
+									"Magic": 94
 								}
 							}
 						}
@@ -691,6 +1185,26 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Zulrah",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Defence": 70,
+									"Hitpoints": 80,
+									"Prayer": 45
+								},
+								"anyOf": {
+									"Ranged": 80,
+									"Magic": 85
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -707,6 +1221,22 @@
 							"skills": {
 								"allOf": {
 									"Agility": 70
+								}
+							}
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Commander Zilyana",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 80,
+									"Defence": 90,
+									"Prayer": 74
 								}
 							}
 						}
@@ -746,6 +1276,34 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill King Black Dragon",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 80,
+									"Strength": 80,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 70
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 80,
+									"Defence": 80,
+									"Hitpoints": 70,
+									"Prayer": 74
+								}
+							}
 						}
 					]
 				}
@@ -825,6 +1383,21 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Scorpia",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Magic": 78,
+									"Prayer": 40
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -838,6 +1411,23 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Skotizo",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 75,
+									"Strength": 75,
+									"Defence": 70,
+									"Prayer": 43
+								}
+							}
 						}
 					]
 				}
@@ -876,6 +1466,26 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Sarachnis",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Hitpoints": 65,
+									"Attack": 65,
+									"Strength": 65,
+									"Defence": 65,
+									"Magic": 60,
+									"Ranged": 70,
+									"Prayer": 43
+								}
+							}
 						}
 					]
 				}
@@ -936,6 +1546,26 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Complete Tombs of Amascus",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 82,
+									"Strength": 85,
+									"Defence": 80,
+									"Hitpoints": 85,
+									"Ranged": 90,
+									"Magic": 94,
+									"Prayer": 77
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -949,6 +1579,23 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Complete the Fight Caves",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 75,
+									"Hitpoints": 75,
+									"Defence": 70,
+									"Prayer": 60
+								}
+							}
 						}
 					]
 				}
@@ -968,6 +1615,38 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Venenatis",
+					"detail": [
+						{
+							"combatLevel": 105,
+							"skills": {
+								"allOf": {
+									"Attack": 75,
+									"Strength": 90,
+									"Defence": 75,
+									"Hitpoints": 85,
+									"Prayer": 74
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Defence": 70,
+									"Hitpoints": 85,
+									"Prayer": 74
+								},
+								"anyOf": {
+									"Ranged": 85,
+									"Magic": 94
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -981,6 +1660,25 @@
 					"detail": [
 						{
 							"combat": true
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Vet'ion",
+					"detail": [
+						{
+							"combatLevel": 85,
+							"skills": {
+								"allOf": {
+									"Hitpoints": 85,
+									"Strength": 90,
+									"Attack": 85,
+									"Defence": 75,
+									"Prayer": 70
+								}
+							}
 						}
 					]
 				}
@@ -1001,6 +1699,32 @@
 						}
 					]
 				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill Vorkath",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Ranged": 85,
+									"Defence": 75,
+									"Prayer": 74
+								}
+							}
+						},
+						{
+							"skills": {
+								"allOf": {
+									"Attack": 90,
+									"Strength": 85,
+									"Defence": 85,
+									"Prayer": 70
+								}
+							}
+						}
+					]
+				}
 			]
 		}
 	},
@@ -1015,6 +1739,22 @@
 						{
 							"combat": true,
 							"quests": ["Desert Treasure II - The Fallen Empire"]
+						}
+					]
+				}
+			],
+			"recommended": [
+				{
+					"concern": "Kill The Whisperer",
+					"detail": [
+						{
+							"skills": {
+								"allOf": {
+									"Defence": 65,
+									"Magic": 90,
+									"Prayer": 77
+								}
+							}
 						}
 					]
 				}

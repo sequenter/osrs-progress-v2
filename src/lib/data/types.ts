@@ -58,6 +58,7 @@ export interface RewardSkills {
 export interface Requirements {
 	main?: Concern[];
 	ironman?: Concern[];
+	recommended?: Concern[];
 }
 
 export interface Concern {

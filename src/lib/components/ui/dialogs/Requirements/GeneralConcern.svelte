@@ -6,7 +6,7 @@
 	export let value: boolean | number | undefined;
 	export let title: string;
 
-	let display = typeof value === 'number' ? value : 'Enabled';
+	let display = typeof value === 'boolean' ? 'Enabled' : value;
 </script>
 
 <div class="flex flex-col items-center pb-2">

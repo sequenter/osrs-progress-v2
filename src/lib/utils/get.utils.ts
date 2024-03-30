@@ -147,6 +147,8 @@ class checkRequirements {
 		if (requirements.main) fulfilled = this.checkConcerns(requirements.main);
 		if (fulfilled && this.settingsStore.general__ironman && requirements.ironman)
 			fulfilled = this.checkConcerns(requirements.ironman);
+		if (fulfilled && this.settingsStore.general__recommended && requirements.recommended)
+			fulfilled = this.checkConcerns(requirements.recommended);
 
 		return { fulfilled, upcoming: this.isUpcoming };
 	};

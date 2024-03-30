@@ -9,12 +9,7 @@
 		dialog.showModal();
 	}
 
-	$: $Settings.general__all,
-		(() => {
-			if ($Settings.general__all) {
-				$Settings.general__recommended = false;
-			}
-		})();
+	$: disabled = $Settings.general__all;
 
 	let dialog: HTMLDialogElement;
 </script>
@@ -31,13 +26,11 @@
 			<CheckInput bind:checked={$Settings.general__ironman} />
 		</SettingsItem>
 
-		{#if !$Settings.general__all}
-			<hr class="h-px my-1 bg-birch-900 border-0" />
+		<hr class="h-px my-1 bg-birch-900 border-0" />
 
-			<SettingsItem item="Require recommended stats">
-				<CheckInput bind:checked={$Settings.general__recommended} />
-			</SettingsItem>
-		{/if}
+		<SettingsItem item="Require recommended stats" {disabled}>
+			<CheckInput bind:checked={$Settings.general__recommended} {disabled} />
+		</SettingsItem>
 	</SettingsSection>
 
 	<hr class="h-px my-1 bg-birch-950 border-0" />
@@ -49,16 +42,14 @@
 
 		<hr class="h-px my-1 bg-birch-900 border-0" />
 
-		<SettingsItem item="That require combat">
-			<CheckInput bind:checked={$Settings.show__combat} />
+		<SettingsItem item="That require combat" {disabled}>
+			<CheckInput bind:checked={$Settings.show__combat} {disabled} />
 		</SettingsItem>
 
-		{#if !$Settings.general__all}
-			<hr class="h-px my-1 bg-birch-900 border-0" />
+		<hr class="h-px my-1 bg-birch-900 border-0" />
 
-			<SettingsItem item="That are upcoming">
-				<NumberInput bind:value={$Settings.show__upcoming} min={0} max={99} />
-			</SettingsItem>
-		{/if}
+		<SettingsItem item="That are upcoming" {disabled}>
+			<NumberInput bind:value={$Settings.show__upcoming} min={0} max={99} {disabled} />
+		</SettingsItem>
 	</SettingsSection>
 </Dialog>

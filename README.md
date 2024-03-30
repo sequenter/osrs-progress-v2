@@ -20,6 +20,20 @@ Written with [Svelte](https://svelte.dev/), [Typescript](https://www.typescriptl
   - **Recommended**: Tasks will only show when _recommended_ (alongside required) stats have been fulfilled.
   - **Upcoming**: Show tasks that that aren't quite unlocked, but will be soon within a given amount of levels.
 
+### Changelog
+
+- v1.0.1
+
+  - Added setting `Require Recommended Stats` to the settings dialog.
+  - `Require Recommended Stats`, `Require Combat` and `Upcoming` settings are disabled when `Disregard requirements` is enabled.
+  - Added `Recommended` requirements to `Pets` and `Achievements` JSON.
+  - Added `Recommended` requirements to task info dialogs if applicable.
+  - Fixed a horizontal line bug within collection tiles.
+  - Updated JSON schemas.
+
+- v1.0.0
+  - Release
+
 ## Data
 
 `Achievements`, `Collections`, `Pets`, `Quests` and `Skills` data in JSON format has been compiled from the [OSRS wiki](https://oldschool.runescape.wiki), with non top level null values omitted. Great effort has been made to consider requirements by drilling down into drop tables and reviewing the finer details, however, they can be incredibly broad - spot something missing? Make a contribution!
@@ -111,12 +125,9 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 		},
 		"requirements": {
 			"$ref": "/Requirements"
-		},
-		"task": {
-			"type": "string"
 		}
 	},
-	"required": ["name", "img", "requirements", "items"],
+	"required": [ "items", "name", "img", "requirements"],
 	"type": "object"
 }
 ```
@@ -135,12 +146,9 @@ Each JSON file is mirrored with a Typescript interface and validated against a c
 		},
 		"requirements": {
 			"$ref": "/Requirements"
-		},
-		"task": {
-			"type": "string"
 		}
 	},
-	"required": ["name", "img", "requirements", "items"],
+	"required": ["name", "img", "requirements"],
 	"type": "object"
 }
 ```

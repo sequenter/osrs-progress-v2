@@ -22,6 +22,7 @@
 
 	$: showRequirements = !!(
 		requirements.main ||
+		requirements.recommended ||
 		($Settings.general__ironman && requirements.ironman)
 	);
 </script>

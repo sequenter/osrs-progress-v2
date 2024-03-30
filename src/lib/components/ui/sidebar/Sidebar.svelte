@@ -15,6 +15,6 @@
 		<Bars />
 	</div>
 	<div class="grow mt-5 items-end hidden lg:flex">
-		<span class="text-birch-800 font-light">Lovingly crafted by Sequenter</span>
+		<span class="text-birch-800 font-light">Lovingly crafted by Sequenter v1.0.1</span>
 	</div>
 </section>

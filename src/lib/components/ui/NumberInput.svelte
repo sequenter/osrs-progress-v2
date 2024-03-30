@@ -5,6 +5,7 @@
 	export let value: number;
 	export let min: number;
 	export let max: number;
+	export let disabled = false;
 	export let onChange = () => {};
 
 	const handleClick = (val: number) => {
@@ -14,13 +15,13 @@
 </script>
 
 <div class="flex items-center justify-between w-12 h-6">
-	<ActionButton onClick={() => handleClick(-1)}>
+	<ActionButton onClick={() => handleClick(-1)} {disabled}>
 		<SVG><Left /></SVG>
 	</ActionButton>
 
 	<span class="flex-1 text-center text-lg">{value}</span>
 
-	<ActionButton onClick={() => handleClick(1)}>
+	<ActionButton onClick={() => handleClick(1)} {disabled}>
 		<SVG><Right /></SVG>
 	</ActionButton>
 </div>

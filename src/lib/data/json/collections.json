@@ -1265,10 +1265,17 @@
 		"requirements": {
 			"main": [
 				{
-					"concern": "Mandatory",
+					"concern": "Obtain Ice gloves",
 					"detail": [
 						{
-							"combat": true,
+							"combat": true
+						}
+					]
+				},
+				{
+					"concern": "Obtain Smiths gloves",
+					"detail": [
+						{
 							"quests": ["Sleeping Giants"],
 							"skills": {
 								"allOf": {

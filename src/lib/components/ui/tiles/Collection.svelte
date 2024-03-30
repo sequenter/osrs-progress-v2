@@ -47,5 +47,4 @@
 	{#if items.length > maxItems}
 		<span class="text-md">and {items.length - maxItems} others...</span>
 	{/if}
-	<hr class="h-px my-2 bg-birch-800 border-0" />
 </Tile>
