@@ -1,5 +1,5 @@
-import type { Skill } from '$lib/data/types';
 import { baseStore } from '$lib/utils/store.utils';
+import type { Skill } from '$lib/data/types';
 
 interface SkillDetail {
 	level: number;

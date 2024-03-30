@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { QUESTS } from '$lib/data';
 	import type { QuestDifficulty } from '$lib/data/types';
-	import { updateStoreArray } from '$lib/utils/store.utils';
+	import { QUESTS } from '$lib/data';
 	import { Quests } from '$stores/quests.store';
 	import Tile from './Tile.svelte';
+	import { updateStoreArray } from '$lib/utils/store.utils';
 
 	export let img: string;
 	export let difficulty: QuestDifficulty;

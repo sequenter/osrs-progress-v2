@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { AchievementDifficulty, QuestDifficulty } from '$lib/data/types';
-	import { WIKI_IMAGES_ERROR, WIKI_IMAGES_URL } from '$constant/Global';
+	import { iconSrc, onIconError } from '$lib/utils/icon.utils';
 	import { clsx } from 'clsx';
 	import { press } from 'svelte-gestures';
 	import { TEXT_COLOUR } from '$constant/Mapper';
@@ -13,11 +13,7 @@
 	export let difficulty: QuestDifficulty | AchievementDifficulty | undefined = undefined;
 	export let onPress: () => void;
 
-	$: src = `${WIKI_IMAGES_URL}${img.replaceAll(' ', '_')}.png`;
-
-	const handleError = () => {
-		src = WIKI_IMAGES_ERROR;
-	};
+	$: src = iconSrc(img);
 </script>
 
 <div
@@ -32,12 +28,20 @@
 	<div class="flex justify-between items-center">
 		<div class="flex items-center">
 			<div class="flex justify-center w-8">
-				<img on:error={handleError} {src} alt="{img} icon" />
+				<img
+					{src}
+					alt="{img} icon"
+					on:error={() => {
+						src = onIconError();
+					}}
+				/>
 			</div>
 			<h3 class="text-2xl ms-3">{title}</h3>
 		</div>
 		{#if difficulty}
 			<span class="text-md {TEXT_COLOUR[difficulty]}">{difficulty}</span>
+		{:else}
+			<slot name="info" />
 		{/if}
 	</div>
 	<hr class="h-px my-2 bg-birch-800 border-0" />

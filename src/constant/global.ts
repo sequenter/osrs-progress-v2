@@ -1,3 +1,5 @@
+import { QUESTS } from '$lib/data';
+
 export const WIKI_IMAGES_URL = 'https://oldschool.runescape.wiki/images/';
 
 export const WIKI_IMAGES_ERROR = 'https://oldschool.runescape.wiki/images/Bank_filler.png';
@@ -67,3 +69,8 @@ export const SKILLING_SKILLS = [
 ] as const;
 
 export const SKILLS = [...COMBAT_SKILLS, ...SKILLING_SKILLS] as const;
+
+export const QUEST_POINTS = QUESTS.reduce(
+	(sum, { rewards }) => sum + (rewards.QP ? rewards.QP : 0),
+	0
+);

@@ -1,5 +1,7 @@
 <script lang="ts">
-	export let title: string;
+	import type { Section } from '$lib/data/types';
+
+	export let title: Section | 'Skills';
 	export let htmlClass = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5';
 </script>
 

@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 export const setItem = (key: string, val: any) => {
 	localStorage.setItem(key, JSON.stringify(val));
 };

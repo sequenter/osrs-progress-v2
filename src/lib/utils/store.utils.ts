@@ -2,7 +2,7 @@ import { getItem, setItem } from './storage.utils';
 import { writable } from 'svelte/store';
 
 export const baseStore = <T>(key: string, defaultStore: T) => {
-	const { set, subscribe } = writable<T>(getItem(key) || defaultStore);
+	const { set, update, subscribe } = writable<T>(getItem(key) || defaultStore);
 
 	subscribe((store) => {
 		setItem(key, store);
@@ -10,6 +10,7 @@ export const baseStore = <T>(key: string, defaultStore: T) => {
 
 	return {
 		set,
+		update,
 		subscribe
 	};
 };

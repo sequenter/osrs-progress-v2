@@ -1,3 +1,4 @@
+import { WIKI_IMAGES_ERROR, WIKI_IMAGES_URL } from '$constant/Global';
 import { default as agility } from '$lib/assets/icons/skills/Agility.png';
 import { default as attack } from '$lib/assets/icons/skills/Attack.png';
 import { default as construction } from '$lib/assets/icons/skills/Construction.png';
@@ -47,4 +48,12 @@ export const Mapper: { [key in Skill]: string } = {
 	Strength: strength,
 	Thieving: thieving,
 	Woodcutting: woodcutting
+};
+
+export const iconSrc = (value: string) => {
+	return `${WIKI_IMAGES_URL}${value.replaceAll(' ', '_')}.png`;
+};
+
+export const onIconError = () => {
+	return WIKI_IMAGES_ERROR;
 };

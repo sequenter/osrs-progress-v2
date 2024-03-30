@@ -12,7 +12,7 @@
 	let dialog: HTMLDialogElement;
 </script>
 
-<Dialog bind:dialog title="Settings">
+<Dialog bind:dialog title="Settings" img="Settings">
 	<SettingsSection title="General">
 		<SettingsItem item="Ironman btw">
 			<CheckInput bind:checked={$Settings.general__ironman} />

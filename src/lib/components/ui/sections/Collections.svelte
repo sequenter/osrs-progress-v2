@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Controls, Section } from '$lib/components';
+	import { collectionCompleteCount, Collections, isComplete } from '$stores/collections.store';
+	import { CollectionDialog, Controls, Section } from '$lib/components';
 	import type { Collection } from '$lib/data/types';
-	import { Collections } from '$stores/collections.store';
 	import { COLLECTIONS } from '$lib/data';
 	import { CollectionTile } from '$lib/components/ui/tiles';
 	import { getCollections } from '$lib/utils/get.utils';
@@ -9,21 +9,24 @@
 	import { Settings } from '$stores/settings.store';
 	import { Skills } from '$stores/skills.store';
 
+	let collectionDialog: CollectionDialog;
+	let complete: number;
 	let collections: (Collection & { upcoming: boolean })[];
 
 	$: $Collections,
-		(collections = getCollections(COLLECTIONS as Collection[], $Skills, $Settings, $Quests).sort(
-			compare
-		));
+		(() => {
+			collections = getCollections(COLLECTIONS as Collection[], $Skills, $Settings, $Quests).sort(
+				compare
+			);
+			complete = collectionCompleteCount();
+		})();
+
+	const onPress = (items: string[], img: string, name: string) => {
+		collectionDialog.show(items, img, name);
+	};
 
 	const compare = (a: Collection, b: Collection) => {
 		return +isComplete(a.name) - +isComplete(b.name) || a.name.localeCompare(b.name);
-	};
-
-	const isComplete = (name: string) => {
-		const collection = $Collections.find((item) => item.name === name);
-
-		return !!collection && collection.count === collection.items.length;
 	};
 
 	const canShow = (name: string) => {
@@ -40,11 +43,7 @@
 	/>
 
 	<svelte:fragment slot="controls">
-		<Controls
-			complete={Object.keys($Collections).length}
-			total={collections.length}
-			bind:show={$Settings.show.collections}
-		/>
+		<Controls {complete} total={collections.length} bind:show={$Settings.show.collections} />
 	</svelte:fragment>
 
 	{#if $Settings.show.collections}
@@ -56,8 +55,11 @@
 					name={collection.name}
 					upcoming={collection.upcoming}
 					complete={isComplete(collection.name)}
+					{onPress}
 				/>
 			{/if}
 		{/each}
 	{/if}
 </Section>
+
+<CollectionDialog bind:this={collectionDialog} />

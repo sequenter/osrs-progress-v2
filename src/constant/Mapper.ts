@@ -1,4 +1,4 @@
-import type { AchievementDifficulty, QuestDifficulty } from '$lib/data/types';
+import type { AchievementDifficulty, QuestDifficulty, Section } from '$lib/data/types';
 
 export const TEXT_COLOUR: { [key in AchievementDifficulty | QuestDifficulty]: string } = {
 	Easy: 'text-lime-500',
@@ -12,3 +12,22 @@ export const TEXT_COLOUR: { [key in AchievementDifficulty | QuestDifficulty]: st
 	Grandmaster: 'text-red-400',
 	Special: 'text-gray-500'
 } as const;
+
+export const SECTION_COLOUR: { [key in Section]: { text: string; background: string } } = {
+	Achievements: {
+		text: 'text-green-400',
+		background: 'bg-green-400'
+	},
+	Quests: {
+		text: 'text-blue-400',
+		background: 'bg-blue-400'
+	},
+	Pets: {
+		text: 'text-red-400',
+		background: 'bg-red-400'
+	},
+	Collections: {
+		text: 'text-yellow-400',
+		background: 'bg-yellow-400'
+	}
+};

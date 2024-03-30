@@ -7,6 +7,7 @@ import {
 } from '$constant/Global';
 
 // Types
+export type Section = 'Achievements' | 'Quests' | 'Pets' | 'Collections';
 export type Skill = (typeof SKILLS)[number];
 export type AchievementDifficulty = (typeof ACHIEVEMENT_DIFFICULTY)[number];
 export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];

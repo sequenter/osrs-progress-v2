@@ -1,20 +1,20 @@
 <script lang="ts">
 	import { ActionButton, Section } from '$lib/components';
 	import { Settings as Icon, SVG } from '$lib/assets';
-	import { Settings } from '$lib/components';
+	import { SettingsDialog } from '$lib/components';
 	import { SKILLS } from '$constant/Global';
 	import { SkillTile } from '$lib/components/ui/tiles';
 
-	let settings: Settings;
+	let settingsDialog: SettingsDialog;
 
 	const handleSettings = () => {
-		settings.show();
+		settingsDialog.show();
 	};
 </script>
 
 <Section
 	title="Skills"
-	htmlClass="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-3"
+	htmlClass="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 xl:grid-cols-10 2xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-3"
 >
 	<img slot="icon" class="me-3 w-8 h-8" src="$lib/assets/icons/Stats.png" alt="Skills icon" />
 
@@ -29,4 +29,4 @@
 	{/each}
 </Section>
 
-<Settings bind:this={settings} />
+<SettingsDialog bind:this={settingsDialog} />
