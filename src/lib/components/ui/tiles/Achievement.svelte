@@ -4,6 +4,7 @@
 	import Tile from './Tile.svelte';
 	import { updateStoreArray } from '$lib/utils/store.utils';
 
+	export let id: string;
 	export let complete: boolean;
 	export let diary: AchievementDiary;
 	export let difficulty: AchievementDifficulty;
@@ -12,12 +13,14 @@
 	export let upcoming: boolean;
 	export let requirements: Requirements;
 
+	$: title = `${diary} ${difficulty} ${Number(id.substring(id.lastIndexOf('-') + 1, id.length))}`;
+
 	const onPress = () => {
 		$Achievements = updateStoreArray($Achievements, task);
 	};
 </script>
 
-<Tile title={diary} {complete} {difficulty} {img} {upcoming} {requirements} {onPress}>
+<Tile {title} {complete} {difficulty} {img} {upcoming} {requirements} {onPress}>
 	<span class="text-md text-yellow-400 grow">{task}</span>
 	<hr class="h-px my-2 bg-birch-800 border-0" />
 </Tile>

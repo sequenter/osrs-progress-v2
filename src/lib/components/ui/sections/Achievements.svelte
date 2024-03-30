@@ -57,6 +57,7 @@
 		{#each achievements as achievement}
 			{#if canShow(achievement.task)}
 				<AchievementTile
+					id={achievement.id}
 					img={achievement.img}
 					diary={achievement.diary}
 					difficulty={achievement.difficulty}
