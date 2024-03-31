@@ -6930,7 +6930,23 @@
 		"difficulty": "Easy",
 		"id": "KOU-EASY-003",
 		"img": "Kourend Area Badge",
-		"requirements": {},
+		"requirements": {
+			"main": [
+				{
+					"concern": "Mandatory",
+					"detail": [
+						{
+							"skills": {
+								"anyOf": {
+									"Runecraft": 1,
+									"Magic": 1
+								}
+							}
+						}
+					]
+				}
+			]
+		},
 		"task": "Hand in a book at the Arceuus Library"
 	},
 	{

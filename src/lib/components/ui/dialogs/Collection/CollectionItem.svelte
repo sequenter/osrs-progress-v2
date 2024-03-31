@@ -7,8 +7,8 @@
 	export let item: string;
 
 	let complete: boolean;
-	let src = iconSrc(item);
 
+	$: src = iconSrc(item);
 	$: $Collections, (complete = itemComplete(name, item));
 
 	const handleClick = () => {

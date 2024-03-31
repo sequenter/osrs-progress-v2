@@ -152,7 +152,26 @@
 		"length": "Short",
 		"name": "Prince Ali Rescue",
 		"release": "28 February 2001",
-		"requirements": {},
+		"requirements": {
+			"ironman": [
+				{
+					"concern": "Obtain some soft clay",
+					"detail": [
+						{
+							"combat": true
+						},
+						{
+							"skills": {
+								"anyOf": {
+									"Mining": 1,
+									"Hunter": 17
+								}
+							}
+						}
+					]
+				}
+			]
+		},
 		"rewards": {
 			"QP": 3
 		}
