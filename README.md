@@ -24,6 +24,11 @@ Written with [Svelte](https://svelte.dev/), [Typescript](https://www.typescriptl
 
 ### Changelog
 
+- v1.0.2
+
+  - Fixed reactive items img src in collection dialog.
+  - Updated `Quests` and `Achievements` JSON.
+
 - v1.0.1
 
   - Added setting `Require Recommended Stats` to the settings dialog.
